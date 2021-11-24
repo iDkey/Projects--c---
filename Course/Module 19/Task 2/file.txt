@@ -1,0 +1,5 @@
+123
+12.3
+integer float
+g
+*
