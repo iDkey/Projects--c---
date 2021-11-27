@@ -19,9 +19,6 @@ int main()
                 std::cin >> date_salary;
                 std::cout << "Input size of salary in RUB:" << std::endl;
                 std::cin >> salary;
-                int x = std::stoi(date_salary.substr(0, 2));
-                x = std::stoi(date_salary.substr(3, 2));
-                x = std::stoi(date_salary.substr(6, 4));
                 if (std::stoi(date_salary.substr(0, 2)) < 1 or std::stoi(date_salary.substr(0, 2)) > 31 
                         or std::stoi(date_salary.substr(3, 2)) < 0 or std::stoi(date_salary.substr(3, 2)) > 12
                         or std::stoi(date_salary.substr(6, 4)) < 0 or std::stoi(date_salary.substr(6, 4)) > 2021)
