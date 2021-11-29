@@ -3,6 +3,25 @@
 #include <vector>
 #include <ctime>
 
+void status()
+{
+    std::ifstream stash("A:\\Programs\\Projects (c++)\\Course\\Module 20\\Task 4\\stash.txt");
+    int count_of_bills = 0;
+    while(!stash.eof())
+    {
+        int plug;
+        stash >> plug;
+        count_of_bills++;
+    }
+    stash.close();
+    std::ofstream status("A:\\Programs\\Projects (c++)\\Course\\Module 20\\Task 4\\status.bin", std::ios::binary);
+    if (count_of_bills == 1001)
+        status << "ATM is full.";
+    else
+        status << count_of_bills << " bills are in ATM.";
+    status.close();
+}
+
 void filling()
 {
     std::ifstream stash("A:\\Programs\\Projects (c++)\\Course\\Module 20\\Task 4\\stash.txt");
@@ -28,6 +47,7 @@ void filling()
     }
     else
         std::cout << "ATM is already full." << std::endl;
+    status();
 }
 
 void withdrawal_of_funds(int sum)
@@ -162,7 +182,7 @@ void withdrawal_of_funds(int sum)
     {
         std::cout << "Not enough bills" << std::endl;
     }
-    
+    status();
 }
 
 int main()

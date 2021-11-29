@@ -1,9 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
+#include <random>
 
 int main()
 {
+    std::random_device rd{};
+    std::mt19937 gen{rd()};
+    std::uniform_int_distribution<> distrib(0, 1);
+
     int size_x, size_y;
 
     std::cout << "Input width of picture:" << std::endl;
@@ -16,7 +21,7 @@ int main()
     {
         for (int j = 0; j < size_x; ++j)
         {
-            pic[i][j] = rand() % 2;
+            pic[i][j] = distrib(gen);
         }
     }
 
@@ -29,4 +34,5 @@ int main()
         }
         picture << "\n";
     }
+    picture.close();
 }
