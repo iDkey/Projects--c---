@@ -43,7 +43,8 @@
         "functional": "cpp",
         "iterator": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "cstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
