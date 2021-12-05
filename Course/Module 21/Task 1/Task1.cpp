@@ -33,7 +33,9 @@ void writing()
 
 void listing()
 {
-    std::ifstream file("A:\\Programs\\Projects (c++)\\Course\\Module 21\\Task 1\\file.txt");
+    std::ifstream file("A:\\Programs\\Projects (c++)\\Course\\Module 21\\Task 1\\file1.txt");
+    if (file.is_open())
+    {
         form output;
         while (!file.eof())
         {
@@ -52,6 +54,10 @@ void listing()
             }
         }
         file.close();
+    }
+    else
+        std::cout << "File is not found" << std::endl;
+    
 }
 
 int main()

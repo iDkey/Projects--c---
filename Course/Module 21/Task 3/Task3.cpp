@@ -9,101 +9,85 @@ struct vector
     float x2;
     float y1;
     float y2;
-    float length_x;
-    float length_y;
 };
+
+void get_coordinates(vector& vec)
+{
+    std::cout << "Input x of begin vector:" << std::endl;
+    std::cin >> vec.x1;
+    std::cout << "Input y of begin vector:" << std::endl;
+    std::cin >> vec.y1;
+    std::cout << "Input x of end for vector:" << std::endl;
+    std::cin >> vec.x2;
+    std::cout << "Input y of end for vector:" << std::endl;
+    std::cin >> vec.y2;
+}
+
+int get_length(float n1, float n2)
+{
+    return n2 - n1;
+}
 
 void adding()
 {
     vector vec[2];
+    float length_x[2];
+    float length_y[2];
     for (int i = 0; i < 2; ++i)
     {
-        std::cout << "Input x of begin for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].x1;
-        std::cout << "Input y of begin for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].y1;
-        std::cout << "Input x of end for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].x2;
-        std::cout << "Input y of end for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].y2;
-        vec[i].length_x = vec[i].x2 - vec[i].x1;
-        vec[i].length_y = vec[i].y2 - vec[i].y1;
+        get_coordinates(vec[i]);
+        length_x[i] = get_length(vec[i].x2, vec[i].x1);
+        length_y[i] = get_length(vec[i].y2, vec[i].y1);
     }
     std::cout << "Summ of this vectors:";
-    std::cout << "{" << vec[0].length_x + vec[1].length_x << ";" << vec[0].length_y + vec[1].length_y << "}" << std::endl;
+    std::cout << "{" << length_x[0] + length_x[1] << ";" << length_y[0] + length_y[1] << "}" << std::endl;
 }
 
 void substracting()
 {
     vector vec[2];
+    float length_x[2];
+    float length_y[2];
     for (int i = 0; i < 2; ++i)
     {
-        std::cout << "Input x of begin for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].x1;
-        std::cout << "Input y of begin for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].y1;
-        std::cout << "Input x of end for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].x2;
-        std::cout << "Input y of end for " << i + 1 << " vector:" << std::endl;
-        std::cin >> vec[i].y2;
-        vec[i].length_x = vec[i].x2 - vec[i].x1;
-        vec[i].length_y = vec[i].y2 - vec[i].y1;
+        get_coordinates(vec[i]);
+        length_x[i] = get_length(vec[i].x2, vec[i].x1);
+        length_y[i] = get_length(vec[i].y2 , vec[i].y1);
     }
     std::cout << "Substract of this vectors:";
-    std::cout << "{" << vec[0].length_x - vec[1].length_x << ";" << vec[0].length_y - vec[1].length_y << "}" << std::endl;
+    std::cout << "{" << length_x[0] - length_x[1] << ";" << length_y[0] - length_y[1] << "}" << std::endl;
 }
 
 void on_scale()
 {
     vector vec;
-    std::cout << "Input x of begin for vector:" << std::endl;
-    std::cin >> vec.x1;
-    std::cout << "Input y of begin for vector:" << std::endl;
-    std::cin >> vec.y1;
-    std::cout << "Input x of end for vector:" << std::endl;
-    std::cin >> vec.x2;
-    std::cout << "Input y of end for vector:" << std::endl;
-    std::cin >> vec.y2;
-    vec.length_x = vec.x2 - vec.x1;
-    vec.length_y = vec.y2 - vec.y1;
+    get_coordinates(vec);
+    float length_x = get_length(vec.x2, vec.x1);
+    float length_y = get_length(vec.y2 , vec.y1);
     float scalar;
     std::cout << "Input scalar:";
     std::cin >> scalar;
     std::cout << "Result vector:" << std::endl;
-    std::cout << "{" << vec.length_x * scalar << ";" << vec.length_y * scalar << "}";
+    std::cout << "{" << length_x * scalar << ";" << length_y * scalar << "}";
 }
 
 float length()
 {
     vector vec;
-    std::cout << "Input x of begin for vector:" << std::endl;
-    std::cin >> vec.x1;
-    std::cout << "Input y of begin for vector:" << std::endl;
-    std::cin >> vec.y1;
-    std::cout << "Input x of end for vector:" << std::endl;
-    std::cin >> vec.x2;
-    std::cout << "Input y of end for vector:" << std::endl;
-    std::cin >> vec.y2;
-    vec.length_x = vec.x2 - vec.x1;
-    vec.length_y = vec.y2 - vec.y1;
-    return sqrt(pow(vec.length_x, 2) + pow(vec.length_y, 2));
+    get_coordinates(vec);
+    float length_x = get_length(vec.x2 , vec.x1);;
+    float length_y = get_length(vec.y2 , vec.y1);
+    return sqrt(pow(length_x, 2) + pow(length_y, 2));
 }
 
 void normalizing()
 {
     vector vec;
-    std::cout << "Input x of begin for vector:" << std::endl;
-    std::cin >> vec.x1;
-    std::cout << "Input y of begin for vector:" << std::endl;
-    std::cin >> vec.y1;
-    std::cout << "Input x of end for vector:" << std::endl;
-    std::cin >> vec.x2;
-    std::cout << "Input y of end for vector:" << std::endl;
-    std::cin >> vec.y2;
-    vec.length_x = vec.x2 - vec.x1;
-    vec.length_y = vec.y2 - vec.y1;
+    get_coordinates(vec);
+    float length_x = vec.x2 - vec.x1;
+    float length_y = vec.y2 - vec.y1;
     std::cout << "Normalized vector:" << std::endl;
-    std::cout << "{" << vec.length_x / sqrt(pow(vec.length_x, 2) + pow(vec.length_y, 2)) << ";" << vec.length_y / sqrt(pow(vec.length_x, 2) + pow(vec.length_y, 2)) << "}";
+    std::cout << "{" << length_x / sqrt(pow(length_x, 2) + pow(length_y, 2)) << ";" << length_y / sqrt(pow(length_x, 2) + pow(length_y, 2)) << "}";
 }
 
 int main()

@@ -10,44 +10,9 @@ struct personage
     int health = 0;
     int armor = -1;
     int damage = 0;
-};
-
-struct position
-{
     int x;
     int y;
 };
-
-std::mt19937 gen(static_cast<unsigned int>(time(0)));
-
-int get_rand_num(int a, int b)
-{
-    std::uniform_int_distribution<> rand_x(a,b);
-    int x = rand_x(gen);
-    return x;
-}
-
-bool check_pos(char (&field)[40][40], int x, int y)
-{
-    if (x < 0 or x > 39 or y < 0 or y > 39 or field[y][x] != '.')
-        return false;
-    else
-        return true;
-}
-
-void filling_en(char (&field)[40][40], position* pos, int i, personage* pers)
-{
-    while (!check_pos(field, pos[i].x, pos[i].y))
-    {
-        pos[i].x = get_rand_num(0, 39);
-        pos[i].y = get_rand_num(0, 39);
-    }
-    field[pos[i].y][pos[i].x] = 'E';
-    pers[i].name = "Enemy #" + std::to_string(i + 1);
-    pers[i].health = get_rand_num(50, 150);
-    pers[i].armor = get_rand_num(0, 50);
-    pers[i].damage = get_rand_num(15, 30);
-}
 
 void filling_field(char (&field)[40][40])
 {
@@ -60,316 +25,216 @@ void filling_field(char (&field)[40][40])
     }
 }
 
-int find_enemy(position* pos, int x, int y)
+void create_hero(personage& pers, std::mt19937& gen)
 {
-    for (int i = 0; i < 5; ++i)
+    pers.name = "Danila";
+    /*while (pers.health < 50 or pers.health > 150)
     {
-        if (pos[i].x == x and pos[i].y == y)
+        std::cout << "Input HP for your character:" << std::endl;
+        std::cin >> pers.health;
+    }*/
+    pers.health = 100;
+    /*while (pers.armor < 50 or pers.armor > 150)
+    {
+        std::cout << "Input armor for your character:" << std::endl;
+        std::cin >> pers.armor;
+    }*/
+    pers.armor = 30;
+    /*while (pers.damage < 50 or pers.damage > 150)
+    {
+        std::cout << "Input damage for your character:" << std::endl;
+        std::cin >> pers.damage;
+    }*/
+    pers.damage = 25;
+    std::uniform_int_distribution<> rand_x(0, 39);
+    pers.x = rand_x(gen);
+    std::uniform_int_distribution<> rand_y(0, 39);
+    pers.y = rand_y(gen);
+}
+
+void create_enemy(personage& pers, std::mt19937& gen, int i, char (&field)[40][40])
+{
+    pers.name = "Enemy #" + std::to_string(i + 1);
+    std::uniform_int_distribution<> rand_health(50, 150);
+    pers.health = rand_health(gen);
+    std::uniform_int_distribution<> rand_armor(0, 50);
+    pers.armor = rand_armor(gen);
+    std::uniform_int_distribution<> rand_damage(15, 30);
+    pers.damage = rand_damage(gen);
+    std::uniform_int_distribution<> rand_x(0, 39);
+    std::uniform_int_distribution<> rand_y(0, 39);
+    do
+    {
+        pers.x = rand_x(gen);
+        pers.y = rand_y(gen);
+    }while(field[pers.y][pers.x] != '.');
+
+    field[pers.y][pers.x] = 'E';
+}
+
+int check_position_to_move(char (&field)[40][40], int x, int y)
+{
+    if (x > 0 and x < 39 and y > 0 and y < 39)
+    {
+        if(field[y][x] == '.')
+            return 1;
+        if(field[y][x] == 'E')
+            return 2;
+        if(field[y][x] == 'P')
+            return 3;
+    }
+    return 0;
+}
+
+int find_enemy(int x, int y, personage* pers)
+{
+    bool find = false;
+    for(int i = 0; i < 5 or !find; ++i)
+    {
+        if((pers + i)->x == x and (pers + i)->y == y)
             return i;
     }
     return -1;
 }
-
-void saving(std::ofstream& saves, personage& pers, position& pos, int& i)
+// -> field, i, -1, 0, pers
+void make_move(char (&field)[40][40], int i, int a, int b, personage* pers)
 {
-    int len = pers.name.length();
-    saves.write((char*)&len, sizeof(len));
-    saves.write(pers.name.c_str(), len);
-    saves.write((char*)&pers.health, sizeof(pers.health));
-    saves.write((char*)&pers.armor, sizeof(pers.armor));
-    saves.write((char*)&pers.damage, sizeof(pers.damage));
-    saves.write((char*)&pos.x, sizeof(pos.x));
-    saves.write((char*)&pos.y, sizeof(pos.y));
-    saves.write((char*)&i, sizeof(i));
+    if(check_position_to_move(field, (pers + i) -> x + a, (pers + i) -> y + b) == 1)
+    {
+        std::swap(field[(pers + i) -> y][(pers + i) -> x], field[(pers + i) -> y + b][(pers + i) -> x + a]);
+    }
+    if(check_position_to_move(field, (pers + i) -> x + a, (pers + i) -> y + b) == 2 and i == 5)
+    {
+        int num_enemy = find_enemy((pers + i) -> x + a, (pers + i) -> y + b, pers);
+        (pers + num_enemy) -> armor -= (pers + i) -> damage;
+        if ((pers + num_enemy) -> armor < 0)
+        {
+            (pers + num_enemy) -> health += (pers + num_enemy) -> armor;
+            (pers + num_enemy) -> armor = 0;
+        }
+        if ((pers + num_enemy) -> health <= 0)
+        {
+            field[(pers + num_enemy) -> y + b][(pers + num_enemy) -> x + a] = '.';
+            (pers + num_enemy) -> health = 0;
+        }
+    }
+    if(check_position_to_move(field, (pers + i) -> x + a, pers[i].y + b) == 3 and i != 5)
+    {
+        (pers + 5) -> armor -= (pers + i) -> damage;
+        if((pers + 5) -> armor < 0)
+        {
+            (pers + 5) -> health += (pers + 5) -> armor;
+            (pers + 5) -> armor = 0;
+        }
+        if ((pers + 5) -> health <= 0)
+        {
+            field[(pers + 5) -> y + b][(pers + 5) -> x + a] = '.';
+            (pers + 5) -> health = 0;
+        }
+    }
 }
 
-void loading(std::ifstream& saves, personage& pers, position& pos, int& i)
+bool check_win(char (&field)[40][40])
 {
-    int len;
-    saves.read((char*)&len, sizeof(len));
-    pers.name.resize(len);
-    saves.read((char*)pers.name.c_str(), len);
-    saves.read((char*)&pers.health, sizeof(pers.health));
-    saves.read((char*)&pers.armor, sizeof(pers.armor));
-    saves.read((char*)&pers.damage, sizeof(pers.damage));
-    saves.read((char*)&pos.x, sizeof(pos.x));
-    saves.read((char*)&pos.y, sizeof(pos.y));
-    saves.read((char*)&i, sizeof(i));
-}
-
-bool check_winner(char (&field)[40][40])
-{
+    int count_players = 0;
     int count_enemy = 0;
-    int count_player = 0;
     for(int i = 0; i < 40; ++i)
     {
         for(int j = 0; j < 40; ++j)
         {
-            if (field[i][j] == 'P')
-                count_player++;
-            if (field[i][j] == 'E')
+            if(field[i][j] == 'P')
+                count_players++;
+            if(field[i][j] == 'E')
                 count_enemy++;
         }
     }
-    if (count_enemy > 0 and count_player > 0)
-        return false;
-    else
-    {
-        if(count_enemy <= 0)
-            std::cout << "I'm lose.";
-        if(count_player <= 0)
-            std::cout << "I'm win.";
+    if(count_enemy > 0 and count_players > 0)
         return true;
-    }
+    else
+        return false;
 }
 
-void map_out(char (&field)[40][40])
+void field_output(char (&field)[40][40])
 {
-    for(int i = 0; i < 40; i++)
+    for(int i = 0; i < 40; ++i)
     {
         for(int j = 0; j < 40; ++j)
         {
-            std::cout << field[i][j] << " ";
+            std::cout << field[i][j];
         }
         std::cout << std::endl;
     }
 }
 
-
-
 int main()
 {
+    std::mt19937 gen(static_cast<unsigned int>(time(0)));
     char field[40][40];
     filling_field(field);
-    position pos[6];
+
     personage pers[6];
     for(int i = 0; i < 5; ++i)
     {
-        filling_en(field, pos, i, pers);
-    }
-
-    std::cout << "Choose name for your character:" << std::endl;
-    std:: cin >> pers[5].name;
-    while (pers[5].health < 50 or pers[5].health > 150)
-    {
-        std::cout << "Enter health (from 50 to 150) for " << pers[5].name << std::endl;
-        std:: cin >> pers[5].health;
-    }
-    while (pers[5].armor < 0 or pers[5].armor > 50)
-    {
-        std::cout << "Enter armor (from 0 to 50) for " << pers[5].name << std::endl;
-        std:: cin >> pers[5].armor;
-    }
-    while (pers[5].damage < 15 or pers[5].damage > 30)
-    {
-        std::cout << "Enter damage (from 15 to 30) for " << pers[5].name << std::endl;
-        std:: cin >> pers[5].damage;
+        create_enemy(pers[i], gen, i, field);
     }
     
-    while (!check_pos(field, pos[5].x, pos[5].y))
+    create_hero(pers[5], gen);
+    field[pers[5].y][pers[5].x] = 'P';
+
+    field_output(field);
+    std::string move;
+    for(int i = 0; check_win(field); i++)
     {
-        pos[5].x = get_rand_num(0, 39);
-        pos[5].y = get_rand_num(0, 39);
-    }
-    field[pos[5].y - 1][pos[5].x - 1] = 'P';
-    map_out(field);
-    for (int i = 0; !check_winner(field); ++i)
-    {
-        
-        std::string move;
-        std::cout << pers[i].name << " make a move" << std::endl;
         if (i == 5)
         {
+            std::cout << pers[5].name << ", your turn to make a move:" << std::endl;
             std::cin >> move;
         }
         else
         {
-            std::uniform_int_distribution<> rand_x(0,3);
-            if (rand_x(gen) == 0)
+            std::cout << pers[i].name << " make a move" << std::endl;
+            std::uniform_int_distribution<> rand_move(0,3);
+            int plug = rand_move(gen);
+            if(plug == 0)
+            {
                 move = "left";
-            if (rand_x(gen) == 1)
+            }
+            if(plug == 1)
+            {
                 move = "right";
-            if (rand_x(gen) == 2)
+            }
+            if(plug == 2)
+            {
                 move = "top";
-            if (rand_x(gen) == 3)
+            }
+            if(plug == 3)
+            {
                 move = "bottom";
-        }
-        
-        if (move == "load")
-        {
-            std::ifstream saves("A:\\Programs\\Projects (c++)\\Course\\Module 21\\Task 4\\saves.bin", std::ios::binary);
-            for (int i = 0; i < 6; ++i)
-            {
-                loading(saves, pers[i], pos[i], i);
             }
-            for (int i = 0; i < 6; ++i)
-            {
-                std::cout << pers[i].name << std::endl;
-            }
-            i--;
         }
-        if (move == "save")
-        {
-            std::ofstream saves("A:\\Programs\\Projects (c++)\\Course\\Module 21\\Task 4\\saves.bin", std::ios::binary);
-            for (int i = 0; i < 6; ++i)
-            {
-                saving(saves, pers[i], pos[i], i);
-            }
-            i--;
-        }
+
         if (move == "left")
         {
-            if (check_pos(field, pos[i].x - 1, pos[i].y))
-            {
-                std::swap(field[pos[i].y][pos[i].x - 1], field[pos[i].y][pos[i].x]);
-            }
-            else
-            {
-                if(field[pos[i].y][pos[i].x - 1] == 'P')
-                {
-                    pers[5].armor -= pers[i].damage;
-                    if (pers[5].armor < 0)
-                    {
-                        pers[5].health += pers[5].armor;
-                        pers[5].armor = 0;
-                    }
-                    if (pers[5].health <= 0)
-                    {
-                        field[pos[5].y][pos[5].x] = '.';
-                    }
-                }
-                if(field[pos[i].y][pos[i].x - 1] == 'E' and i == 5)
-                {
-                    int j = find_enemy(pos, pos[i].x - 1, pos[i].y);
-                    pers[j].armor -= pers[5].damage;
-                    if (pers[j].armor < 0)
-                    {
-                        pers[j].health += pers[j].armor;
-                        pers[j].armor = 0;
-                    }
-                    if (pers[j].health <= 0)
-                    {
-                        field[pos[j].y][pos[j].x] = '.';
-                    }
-                }
-            }
+            make_move(field, i, -1, 0, pers);
         }
         if (move == "right")
         {
-            if (check_pos(field, pos[i].x + 1, pos[i].y))
-            {
-                std::swap(field[pos[i].y][pos[i].x + 1], field[pos[i].y][pos[i].x]);
-            }
-            else
-            {
-                if(field[pos[i].y][pos[i].x + 1] == 'P')
-                {
-                    pers[5].armor -= pers[i].damage;
-                    if (pers[5].armor < 0)
-                    {
-                        pers[5].health += pers[5].armor;
-                        pers[5].armor = 0;
-                    }
-                    if (pers[5].health <= 0)
-                    {
-                        field[pos[5].y][pos[5].x] = '.';
-                    }
-                }
-                if(field[pos[i].y][pos[i].x + 1] == 'E' and i == 5)
-                {
-                    int j = find_enemy(pos, pos[i].x + 1, pos[i].y);
-                    pers[j].armor -= pers[5].damage;
-                    if (pers[j].armor < 0)
-                    {
-                        pers[j].health += pers[j].armor;
-                        pers[j].armor = 0;
-                    }
-                    if (pers[j].health <= 0)
-                    {
-                        field[pos[j].y][pos[j].x] = '.';
-                    }
-                }
-            }
+            make_move(field, i, 1, 0, pers);
         }
         if (move == "top")
         {
-            if (check_pos(field, pos[i].x, pos[i].y - 1))
-            {
-                std::swap(field[pos[i].y - 1][pos[i].x], field[pos[i].y][pos[i].x]);
-            }
-            else
-            {
-                if(field[pos[i].y - 1][pos[i].x] == 'P')
-                {
-                    pers[5].armor -= pers[i].damage;
-                    if (pers[5].armor < 0)
-                    {
-                        pers[5].health += pers[5].armor;
-                        pers[5].armor = 0;
-                    }
-                    if (pers[5].health <= 0)
-                    {
-                        field[pos[5].y][pos[5].x] = '.';
-                    }
-                }
-                if(field[pos[i].y - 1][pos[i].x] == 'E' and i == 5)
-                {
-                    int j = find_enemy(pos, pos[i].x, pos[i].y - 1);
-                    pers[j].armor -= pers[5].damage;
-                    if (pers[j].armor < 0)
-                    {
-                        pers[j].health += pers[j].armor;
-                        pers[j].armor = 0;
-                    }
-                    if (pers[j].health <= 0)
-                    {
-                        field[pos[j].y][pos[j].x] = '.';
-                    }
-                }
-            }
+            make_move(field, i, 0, -1, pers);
         }
         if (move == "bottom")
         {
-            if (check_pos(field, pos[i].x, pos[i].y + 1))
-            {
-                std::swap(field[pos[i].y + 1][pos[i].x], field[pos[i].y][pos[i].x]);
-            }
-            else
-            {
-                if(field[pos[i].y + 1][pos[i].x] == 'P')
-                {
-                    pers[5].armor -= pers[i].damage;
-                    if (pers[5].armor < 0)
-                    {
-                        pers[5].health += pers[5].armor;
-                        pers[5].armor = 0;
-                    }
-                    if (pers[5].health <= 0)
-                    {
-                        field[pos[5].y][pos[5].x] = '.';
-                    }
-                }
-                if(field[pos[i].y + 1][pos[i].x] == 'E' and i == 5)
-                {
-                    int j = find_enemy(pos, pos[i].x, pos[i].y + 1);
-                    pers[j].armor -= pers[5].damage;
-                    if (pers[j].armor < 0)
-                    {
-                        pers[j].health += pers[j].armor;
-                        pers[j].armor = 0;
-                    }
-                    if (pers[j].health <= 0)
-                    {
-                        field[pos[j].y][pos[j].x] = '.';
-                    }
-                }
-            }
+            make_move(field, i, 0, 1, pers);
         }
-        if (i == 5)
+        if(i == 5)
         {
             i = -1;
         }
-        map_out(field);
-        check_winner(field);
+
+        check_win(field);
+        field_output(field);
     }
 }
