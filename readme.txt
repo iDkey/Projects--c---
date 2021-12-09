@@ -13,4 +13,4 @@ x = rand_x(gen);
 Работа с файлами:
 ifstrear файл на чтение, ofstream - на запись
 std::ios::binary bin format
-file.is_open() проверка, на возможность открытия файла
+file.is_open() проверка, на возможность открытия файл
