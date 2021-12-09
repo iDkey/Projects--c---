@@ -14,3 +14,11 @@ x = rand_x(gen);
 ifstrear файл на чтение, ofstream - на запись
 std::ios::binary bin format
 file.is_open() проверка, на возможность открытия файл
+
+std::map:
+hand_book_names.insert(std::pair<type 1, type 2> (variable 1, variable 2));
+hand_book_names.insert(std::make_pair<type 1, type 2> (variable 1, variable 2));
+std::map<type 1, type 2>::iterator name_iterator;
+name_iterator -> first - ключ
+name_iterator -> second - значение по ключу
+Ключ уникален, при повторении ключа, значение перезаписывается
