@@ -13,18 +13,16 @@ bool check_anagram(std::string& word, std::string& anagram)
         }
         else
         {
-            std::map<char, int>::iterator it = word_map.find(word[i]);
-            it -> second += 1;
+            word_map[word[i]] += 1;
         }
     }
     for(int i = 0; i < anagram.size(); ++i)
     {
         if(word_map.count(anagram[i]) > 0)
         {
-            std::map<char, int>::iterator it = word_map.find(anagram[i]);
-            if(it -> second > 0)
+            if(word_map[anagram[i]] > 0)
             {
-                it -> second -= 1;
+                word_map[anagram[i]]--;
             }
             else
             {
