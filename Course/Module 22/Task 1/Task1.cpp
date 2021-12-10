@@ -4,13 +4,10 @@
 
 int main()
 {
-    std::map<int, std::string> hand_book_names;
-    std::map<int, std::string> hand_book_numbers;
-    
+    std::map<std::string, std::string> hand_book;   
     for(int i = 0; i < 5; ++i)
     {
-        hand_book_names.insert(std::make_pair<int, std::string> (i + 1, "Ivanov"));
-        hand_book_numbers.insert(std::make_pair<int, std::string> (i + 1, "69-70-0" + std::to_string(i)));
+        hand_book.insert(std::make_pair<std::string, std::string> ("69-70-0" + std::to_string(i), "Ivanov"));
     }
 
     std::string request;
@@ -56,30 +53,24 @@ int main()
     
     if (name != "" and number != "")
     {
-        hand_book_names.insert(std::pair<int, std::string> (hand_book_numbers.size() + 1, name));
-        hand_book_numbers.insert(std::pair<int, std::string> (hand_book_numbers.size() + 1, number));
+        hand_book.insert(std::pair<std::string, std::string> (number, name));
+        
     }
-    hand_book_names.insert(std::pair<int, std::string> (hand_book_numbers.size() + 1, "Danila"));
-    hand_book_numbers.insert(std::pair<int, std::string> (hand_book_numbers.size() + 1, "33-44-55"));
-    hand_book_names.insert(std::pair<int, std::string> (hand_book_numbers.size() + 1, "Zab"));
-    hand_book_numbers.insert(std::pair<int, std::string> (hand_book_numbers.size() + 1, "33-44-56"));
-
+    hand_book.insert(std::pair<std::string, std::string> ("33-44-55", "Danila"));
+    hand_book.insert(std::pair<std::string, std::string> ("33-44-56", "Zab"));
 
     if(name == "")
     {
-        for(std::map<int, std::string>::iterator it = hand_book_numbers.begin(); it != hand_book_names.end() or it -> second <= number; it++)
-        {
-            if(it -> second == number)
-                std::cout << hand_book_names[it->first];
-        }
+        if(hand_book.count(number) > 0)
+            std::cout << hand_book[number];
     }
     if(number == "")
     {
-        for(std::map<int, std::string>::iterator it = hand_book_names.begin(); it != hand_book_names.end(); it++)
+        for(std::map<std::string, std::string>::iterator it = hand_book.begin(); it != hand_book.end(); it++)
         {
-            if(it->second == name)
+            if(it->second == request)
             {
-                std::cout << hand_book_numbers[it -> first] << " ";
+                std::cout << it->first << " ";
             }
         }
     }
