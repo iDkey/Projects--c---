@@ -24,17 +24,6 @@ CMAKE_AR:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/ar.exe
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/g++.exe
-
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/gcc-ar.exe
-
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/gcc-ranlib.exe
-
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
 
@@ -54,7 +43,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/gcc.exe
+CMAKE_C_COMPILER:STRING=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -155,9 +144,6 @@ CMAKE_PROJECT_NAME:STATIC=Task_1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/ranlib.exe
-
-//RC compiler
-CMAKE_RC_COMPILER:FILEPATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/windres.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=
@@ -265,12 +251,6 @@ CMAKE_COMMAND:INTERNAL=A:/Programs/CLion/CLion 2021.3/bin/cmake/win/bin/cmake.ex
 CMAKE_CPACK_COMMAND:INTERNAL=A:/Programs/CLion/CLion 2021.3/bin/cmake/win/bin/cpack.exe
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=A:/Programs/CLion/CLion 2021.3/bin/cmake/win/bin/ctest.exe
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
-CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
-CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
-CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -283,6 +263,8 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_STANDARD_LIBRARIES
 CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+CMAKE_C_ABI_COMPILED:INTERNAL=FALSE
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
@@ -354,9 +336,6 @@ CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_COMPILER
-CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
-CMAKE_RC_COMPILER_WORKS:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_FLAGS
 CMAKE_RC_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_FLAGS_DEBUG

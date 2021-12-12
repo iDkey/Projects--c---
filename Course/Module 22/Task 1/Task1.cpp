@@ -4,10 +4,16 @@
 
 int main()
 {
-    std::map<std::string, std::string> hand_book;   
+    std::map<std::string, std::string> hand_book;
+    std::map<std::string, std::string> name_number;
+
     for(int i = 0; i < 5; ++i)
     {
         hand_book.insert(std::make_pair<std::string, std::string> ("69-70-0" + std::to_string(i), "Ivanov"));
+        if (name_number.count("Ivanov"))
+            name_number["Ivanov"] += " 69-70-0" + std::to_string(i);
+        else
+            name_number.insert(std::make_pair<std::string, std::string> ("Ivanov", "69-70-0" + std::to_string(i)));
     }
 
     std::string request;
@@ -54,10 +60,29 @@ int main()
     if (name != "" and number != "")
     {
         hand_book.insert(std::pair<std::string, std::string> (number, name));
-        
+        if (name_number.count(name))
+            name_number[name] += (" " + number);
+        else
+            name_number.insert(std::pair<std::string, std::string> (name, number));
     }
+
     hand_book.insert(std::pair<std::string, std::string> ("33-44-55", "Danila"));
+    if (name_number.count("Danila"))
+        name_number["Danila"] += " 33-44-55";
+    else
+        name_number.insert(std::make_pair<std::string, std::string> ("Danila", "33-44-55"));
+
     hand_book.insert(std::pair<std::string, std::string> ("33-44-56", "Zab"));
+    if (name_number.count("Zab"))
+        name_number["Zab"] += " 33-44-56";
+    else
+        name_number.insert(std::make_pair<std::string, std::string> ("Zab", "33-44-56"));
+    
+    hand_book.insert(std::pair<std::string, std::string> ("11-22-56", "Ivanov"));
+    if (name_number.count("Ivanov"))
+        name_number["Ivanov"] += " 11-22-56";
+    else
+        name_number.insert(std::make_pair<std::string, std::string> ("Ivanov", "11-22-56"));
 
     if(name == "")
     {
@@ -66,12 +91,6 @@ int main()
     }
     if(number == "")
     {
-        for(std::map<std::string, std::string>::iterator it = hand_book.begin(); it != hand_book.end(); it++)
-        {
-            if(it->second == request)
-            {
-                std::cout << it->first << " ";
-            }
-        }
+        std::cout << name_number[name];
     }
 }
