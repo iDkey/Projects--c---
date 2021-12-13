@@ -1,56 +1,19 @@
 #include <iostream>
-#include <map>
-#include <string>
 
-using namespace std;
-
-bool requestIsSurname(const string&);
-
-int main() {
-
-  string request;
-  getline(cin, request);
-
-  map<string, string> oMap;
-  for(int i = 0; i < 10; ++i)
-    oMap.insert(pair<string, string> ("67-68-9" + to_string(i), "Ivanov"));
-
-  if(request.find(' ') != string::npos)  {
-    string number = request.substr(0,request.find(' '));
-    string surname = request.substr(request.find(' ') + 1, request.length());
-
-    oMap.insert(pair<string, string> (number, surname));
-    
-    system("clear");
-    for(auto& item : oMap)
-      cout << item.first << " " << item.second << endl;
-
-  } else if(requestIsSurname(request))  {
-    system("clear");
-    cout << "Surname: " << request << endl;
-    cout << "Phone number: ";
-
-    for(auto& item : oMap) {
-      if(item.second == request)
-      {
-        cout << " " << item.first ;
-      }
+void filling(int (&train)[10])
+{
+    for(int i = 0; i < 10; ++i)
+    {
+        std::cout << i + 1 << " train car:" << std::endl;
+        std::cin >> train[i];
     }
-    cout << endl;
-  } else  {
-    system("clear");
-    cout << "Surname: " << request;
-
-    cout << oMap[request] << endl;
-  }
 }
 
-bool requestIsSurname(const string& request){
-  for(int i = 0; i < request.length(); ++i)  {
-    if(!(request[i] >= 'a' && request[i] <= 'z') && !(request[i] >= 'A' && request[i] <= 'Z'))
-    {
-      return false;
-    }
-  }
-  return true;
+int main()
+{
+    int train[10];
+    int summ = 0;
+    std::cout << "Input count in train:" << std::endl;
+    filling(train);
+
 }
