@@ -7,6 +7,7 @@
 #define FRIDAY 5
 #define SATURDAY 6
 #define SUNDAY 7
+#define DAY(day_name) #day_name
 
 int main()
 {
@@ -15,30 +16,30 @@ int main()
     std::cin >> day_number;
     if(day_number == MONDAY)
     {
-        std::cout << "Monday" << std::endl;
+        std::cout << DAY(MONDAY);
     }
     if(day_number == TUESDAY)
     {
-        std::cout << "Tuesday" << std::endl;
+        std::cout << DAY(TUESDAY);
     }
     if(day_number == WEDNESDAY)
     {
-        std::cout << "Wednesday" << std::endl;
+        std::cout << DAY(WEDNESDAY);
     }
     if(day_number == THURSDAY)
     {
-        std::cout << "Thursday" << std::endl;
+        std::cout << DAY(THURSDAY);
     }
     if(day_number == FRIDAY)
     {
-        std::cout << "Friday" << std::endl;
+        std::cout << DAY(FRIDAY);
     }
     if(day_number == SATURDAY)
     {
-        std::cout << "Saturday" << std::endl;
+        std::cout << DAY(SATURDAY);
     }
     if(day_number == SUNDAY)
     {
-        std::cout << "Sunday" << std::endl;
+        std::cout << DAY(SUNDAY);
     }
 }

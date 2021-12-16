@@ -22,3 +22,9 @@ std::map<type 1, type 2>::iterator name_iterator;
 name_iterator -> first - ключ
 name_iterator -> second - значение по ключу
 Ключ уникален, при повторении ключа, значение перезаписывается
+
+Время:
+Библиотека <ctime>
+std::time_t t = std::time(nullptr); время в секундах
+std::tm* local = std::localtime(&t); часы
+std::asctime(local); полная дата и время
