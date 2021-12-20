@@ -1,45 +1,37 @@
 #include <iostream>
 #include <ctime>
 #include <string>
-#include <fstream>
 
-void out_time(std::time_t start, std::time_t end)
+void out_time(int time)
 {
-    int dif = std::difftime(end, start);
-    if(dif < 60)
+    if(time < 60)
     {
-        if (dif == 1)
-            std::cout << dif << " second" << std::endl;
-        else
-        std::cout << dif << " seconds " << std::endl;
+        std::cout << time << " seconds" << std::endl;
     }
     else
     {
-        int min = dif / 60;
-        dif %= 60;
-        if (min < 60)
+        int min = time / 60;
+        if(min < 60)
         {
-            if (min == 1)
-                std::cout << min << " minute " << dif << " seconds " << std::endl;
-            else
-            std::cout << min << " minutes " << dif << " seconds" << std::endl;
+            std::cout << min << " minutes " << time % 60 << " seconds" << std::endl;
         }
         else
         {
-            int hours = min / 60;
-            min %= 60;
-            if (hours == 1)
-                std::cout << hours << " hour " << min << " minutes " << dif << " seconds " << std::endl;
-            else
-                std::cout << hours << " hours " << min << " minutes " << dif << " seconds " << std::endl;
+            int hour = min / 60;
+            if(hour < 60)
+            {
+                std::cout << hour << " hours "<< min << " minutes " << time % 60 << " seconds" << std::endl;
+            }
         }
     }
 }
 
 int main() {
     std::string command = "";
+    std::string task_name;
     bool task_status = false;
-    std::time_t t = std::time(nullptr);
+    std::time_t t_start;
+    std::time_t t_end;
     while(command != "exit")
     {
         std::cout << "Input a command:" << std::endl;
@@ -48,54 +40,35 @@ int main() {
         {
             if(!task_status)
             {
-                std::string task_name;
-                std::cout << "Input a task's name:" << std::endl;
+                std::cout << "Input task's name: " << std::endl;
                 std::cin >> task_name;
-                std::ofstream saves("A:\\Programs\\Projects(c++)\\Course\\Module 24\\Task 1\\saves.txt", std::ios::app);
-                saves << task_name << " " << std::time(nullptr); // start a new task
-                saves.close();
+                t_start = std::time(nullptr);
                 task_status = true;
             }
             else
             {
-                std::ofstream saves("A:\\Programs\\Projects(c++)\\Course\\Module 24\\Task 1\\saves.txt", std::ios::app);
-                saves << " " << std::time(nullptr) << " "; //end the last task
-                std::string task_name;
-                std::cout << "Input a task's name:" << std::endl;
+                t_end = std::time(nullptr);
+                int d = std::difftime(t_end, t_start);
+                std::cout << task_name << " end in: ";
+                out_time(d);
+                std::cout << "Input task's name: " << std::endl;
                 std::cin >> task_name;
-                saves << " " << task_name << " " << std::time(nullptr); // start a new task
-                saves.close();
+                t_start = std::time(nullptr);
             }
         }
         if (command == "end")
         {
-            std::ofstream saves("A:\\Programs\\Projects(c++)\\Course\\Module 24\\Task 1\\saves.txt", std::ios::app);
-            saves << " " << std::time(nullptr) << " "; //end the last task
-            saves.close();
-            task_status = false;
+            t_end = std::time(nullptr);
+            int d = std::difftime(t_end, t_start);
+            std::cout << task_name << " end in: ";
+            out_time(d);
         }
         if (command == "status")
         {
-            std::ifstream saves("A:\\Programs\\Projects(c++)\\Course\\Module 24\\Task 1\\saves.txt");
-            while(!saves.eof())
-            {
-                std::string task_name;
-                std::time_t start;
-                std::time_t end;
-                saves >> task_name;
-                saves >> start;
-                saves >> end;
-                std::tm* start_f = std::localtime(&start);
-                std::tm* end_f = std::localtime(&end);
-                if (task_name != "")
-                {
-                    std::cout << task_name << " continue ";
-                    out_time(start, end);
-                }
-
-
-            }
-            saves.close();
+            t_end = std::time(nullptr);
+            int d = std::difftime(t_end, t_start);
+            std::cout << task_name << " continue: ";
+            out_time(d);
         }
     }
 }
