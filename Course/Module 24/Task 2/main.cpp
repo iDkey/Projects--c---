@@ -1,44 +1,63 @@
 #include <iostream>
-#include <map>
 #include <ctime>
 #include <iomanip>
 #include <string>
+#include <vector>
 
 int main() {
-    std::map<int, std::string> birthdays;
-    std::cout << "Input dates of birthdays and names yours friends:" << std::endl;
+    std::vector<std::string> names;
+    std::vector<std::tm> dates;
     std::string name = "";
-    std::time_t t = std::time(nullptr);
-    std::tm* local = std::localtime(&t);
+    std::time_t time_birthday = std::time(nullptr);
+    std::tm time_birthday_tm = *localtime(&time_birthday);
     while(true)
     {
         std::cout << "Input a name:" << std::endl;
         std::cin >> name;
         if(name == "end")
             break;
-        std::cout << "Input a date of birthday like YYYY/MM/DD:" << std::endl;
-        std::cin >> std::get_time(local, "%Y/%m/%d");
-        int date = local->tm_mon * 100 + local->tm_mday;
-        if (birthdays.count(date) > 0)
-        {
-            birthdays[date] += ", " + name;
-        }
-        else
-        {
-            birthdays.insert(std::pair<int, std::string> (date, name));
-        }
+        names.push_back(name);
+        std::cout << "Input a date of birthday for " << name << std::endl;
+        std::cin >> std::get_time(&time_birthday_tm, "%Y/%m/%d");
+        dates.push_back(time_birthday_tm);
     }
 
-    std::time_t t_now = std::time(nullptr);
-    std::tm* local_now = std::localtime(&t_now);
-    std::cout << "Today: " << local_now->tm_year + 1900<< "/" << local_now->tm_mon + 1 << "/" << local_now->tm_mday << std::endl;
-    int date_now = local_now->tm_mon * 100 + local_now->tm_mday;
-    if(birthdays.count(date_now) > 0)
+    std::time_t time_now = time(nullptr);
+    std::tm time_now_tm = *localtime(&time_now);
+    for(int i = 0; i < dates.size(); i++)
     {
-        std::cout << "Today " << birthdays[date_now] << " birthday" << std::endl;
+        if(dates[i].tm_mday == time_now_tm.tm_mday and dates[i].tm_mon == time_now_tm.tm_mon)
+            std::cout << "Today " << names[i] << "'s birthday" << std::endl;
     }
-    std::map<int, std::string>::iterator it = birthdays.upper_bound(date_now);
-    int date_d = it->first % 100;
-    int date_m = it->first / 100 % 100;
-    std::cout << date_m << "/" << date_d << " " << it->second << " birthday" << std::endl;
+    int dif_month;
+    int dif_day;
+    int min_day = 32;
+    int min_month = 13;
+    std::tm next_birthday;
+    std::string n_names = "";
+    for(int i = 0; i < dates.size(); ++i)
+    {
+        if(dates[i].tm_mon < time_now_tm.tm_mon)
+            dif_month = 12 - time_now_tm.tm_mon + dates[i].tm_mon;
+        else
+            dif_month = dates[i].tm_mon - time_now_tm.tm_mon;
+        if(dates[i].tm_mday < time_now_tm.tm_mday)
+            dif_day = 31 - time_now_tm.tm_mday + dates[i].tm_mday;
+        else
+            dif_day = dates[i].tm_mday - time_now_tm.tm_mday;
+
+        if((dif_month <= min_month and dif_day <= min_day) and !(dates[i].tm_mday == time_now_tm.tm_mday and dates[i].tm_mon == time_now_tm.tm_mon))
+        {
+            if (dif_month <= min_month and dif_day <= min_day and n_names != "")
+                n_names += "'s, " + names[i];
+            else
+                n_names = names[i];
+            min_month = dif_month;
+            min_day = dif_day;
+            next_birthday = dates[i];
+        }
+
+
+    }
+    std::cout << n_names << "'s next birthdays (" << next_birthday.tm_mon + 1 << "/" << next_birthday.tm_mday << ")" << std::endl;
 }
