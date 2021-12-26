@@ -37,19 +37,42 @@ int main() {
     std::string n_names = "";
     for(int i = 0; i < dates.size(); ++i)
     {
-        if(dates[i].tm_mon < time_now_tm.tm_mon)
-            dif_month = 12 - time_now_tm.tm_mon + dates[i].tm_mon;
-        else
+        if(dates[i].tm_mon >= time_now_tm.tm_mon and dates[i].tm_mday >= time_now_tm.tm_mday)
+        {
             dif_month = dates[i].tm_mon - time_now_tm.tm_mon;
-        if(dates[i].tm_mday < time_now_tm.tm_mday)
-            dif_day = 31 - time_now_tm.tm_mday + dates[i].tm_mday;
-        else
             dif_day = dates[i].tm_mday - time_now_tm.tm_mday;
+        }
+        if(dates[i].tm_mon < time_now_tm.tm_mon and dates[i].tm_mday < time_now_tm.tm_mday)
+        {
+            dif_month = 12 - time_now_tm.tm_mon + dates[i].tm_mon;
+            dif_day = 31 - time_now_tm.tm_mday + dates[i].tm_mday;
+        }
+        if(dates[i].tm_mon < time_now_tm.tm_mon and dates[i].tm_mday >= time_now_tm.tm_mday)
+        {
+            dif_month = 12 - time_now_tm.tm_mon + dates[i].tm_mon;
+            dif_day = dates[i].tm_mday - time_now_tm.tm_mday;
+        }
+        if(dates[i].tm_mon > time_now_tm.tm_mon and dates[i].tm_mday < time_now_tm.tm_mday)
+        {
+            dif_month = dates[i].tm_mon - time_now_tm.tm_mon;
+            dif_day = 31 - time_now_tm.tm_mday + dates[i].tm_mday;
+        }
+        if(dates[i].tm_mon == time_now_tm.tm_mon and dates[i].tm_mday < time_now_tm.tm_mday)
+        {
+            dif_month = 12 - time_now_tm.tm_mon + dates[i].tm_mon;
+            dif_day = time_now_tm.tm_mday - dates[i].tm_mday;
+        }
 
         if((dif_month <= min_month and dif_day <= min_day) and !(dates[i].tm_mday == time_now_tm.tm_mday and dates[i].tm_mon == time_now_tm.tm_mon))
         {
-            if (dif_month <= min_month and dif_day <= min_day and n_names != "")
-                n_names += "'s, " + names[i];
+            if (dif_month <= min_month and dif_day <= min_day)
+            {
+                if(dif_month == min_month and dif_day == min_day)
+                    n_names += "'s, " + names[i];
+                else
+                    n_names = names[i];
+            }
+
             else
                 n_names = names[i];
             min_month = dif_month;
