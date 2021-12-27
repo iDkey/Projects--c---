@@ -80,20 +80,14 @@ int main() {
         }
         if (command == "status")
         {
-            t_end = std::time(nullptr);
-            int d = std::difftime(t_end, t_start);
-            if (!task_status)
+            for (int i = 0; i < tasks.size(); ++i)
+                std::cout << tasks[i] << " continue: " << time[i] << " seconds" << std::endl;
+            if(task_status)
             {
-                for (int i = 0; i < tasks.size(); ++i)
-                    std::cout << tasks[i] << " continue: " << time[i] << "seconds" << std::endl;
-            }
-            else
-            {
-                tasks.push_back(task_name);
-                time.push_back(d);
-                for (int i = 0; i < tasks.size(); ++i)
-                    std::cout << tasks[i] << " continue: " << time[i] << "seconds" << std::endl;
+                std::cout << "Now running task: " << task_name << std::endl;
             }
         }
     }
 }
+
+
