@@ -12,29 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb811b15-2da1-4945-b26b-d7ba5ff540f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Task 2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/cpu.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/disk.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/gpu.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/kbd.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ram.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cpu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Disk.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gpu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kbd.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ram.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/.idea/Task 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/src/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module 26/Task 1/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,11 +103,23 @@
       <workItem from="1640812350850" duration="1894000" />
       <workItem from="1641043476167" duration="3122000" />
       <workItem from="1641061811014" duration="2096000" />
-      <workItem from="1641207340955" duration="5000" />
+      <workItem from="1641207340955" duration="1683000" />
     </task>
+    <task id="LOCAL-00001" summary="immit">
+      <created>1641207374192</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641207374192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="immit" />
+    <option name="LAST_COMMIT_MESSAGE" value="immit" />
   </component>
 </project>

@@ -2,22 +2,28 @@
 #include <string>
 #include <vector>
 
+class Abonent
+{
+public:
+    unsigned long numAbonent{};
+    std::string nameAbonent;
+};
+
 class Telephone
 {
-    public:
-        unsigned long number{};
-        std::string name;
-        std::vector<unsigned long> numberPhoneBook;
-        static std::vector<std::string> namePhoneBook;
+public:
+    unsigned long number{};
+    std::string name;
+    static std::vector<Abonent> phoneBook;
 
-    void add()
+    static void add()
     {
+        Abonent abonent = *new Abonent();
         std::cout << "Input a number of person in 10-digit format:" << std::endl;
-        std::cin >> number;
+        std::cin >> abonent.numAbonent;
         std::cout << "Input a name:" << std::endl;
-        std::cin >> name;
-        numberPhoneBook.push_back(number);
-        namePhoneBook.push_back(name);
+        std::cin >> abonent.nameAbonent;
+        phoneBook.push_back(abonent);
     }
 
     void call()
@@ -49,9 +55,9 @@ class Telephone
     static bool checkName(std::string& name)
     {
         bool ok = false;
-        for(auto & i : namePhoneBook)
+        for(auto & i : phoneBook)
         {
-            if(i == name)
+            if (i.nameAbonent == name)
             {
                 ok = true;
                 break;
@@ -73,7 +79,7 @@ class Telephone
             {
                 std::cout << "Input a text of sms:" << std::endl;
                 std::getline(std::cin, plug);
-                std::cout << "Message: '" << plug << "'" << std::endl;
+                std::cout << "Message: " << plug << std::endl;
                 std::cout << " was sent to " << name << std::endl;
             }
             else
@@ -96,24 +102,23 @@ class Telephone
 
 int main()
 {
-    auto* telephone = new Telephone();
+    Telephone telephone = Telephone();
     std::string action;
     while(action != "exit")
     {
         if(action == "add")
         {
-            telephone->add();
+            Telephone::add();
         }
         if(action == "call")
         {
-            telephone->call();
+            telephone.call();
         }
         if(action == "sms")
         {
-            telephone->sms();
+            telephone.sms();
         }
         std::cout << "Choose the action (add, call, sms, exit):" << std::endl;
         std::cin >> action;
     }
-    delete telephone;
 }
