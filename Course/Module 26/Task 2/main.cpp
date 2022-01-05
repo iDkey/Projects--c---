@@ -14,9 +14,9 @@ class Telephone
 public:
     unsigned long number{};
     std::string name;
-    static std::vector<Abonent> phoneBook;
+    std::vector<Abonent> phoneBook;
 
-    static void add()
+    void add()
     {
         Abonent abonent = *new Abonent();
         std::cout << "Input a number of person in 10-digit format:" << std::endl;
@@ -35,9 +35,9 @@ public:
         {
             std::cout << "Enter the name: " << std::endl;
             std::cin >> name;
-            if(checkName(name))
+            if(checkName())
             {
-                std::cout << "Call : " << name;
+                std::cout << "Call : " << name << std::endl;
             }
             else
             {
@@ -52,7 +52,7 @@ public:
         }
     }
 
-    static bool checkName(std::string& name)
+    bool checkName()
     {
         bool ok = false;
         for(auto & i : phoneBook)
@@ -69,17 +69,18 @@ public:
     void sms()
     {
         std::string plug;
-        std::cout << "Call by name or number?" << std::endl;
+        std::cout << "Write sms by name or number?" << std::endl;
         std::cin >> plug;
         if(plug == "name")
         {
             std::cout << "Enter the name: " << std::endl;
             std::cin >> name;
-            if(checkName(name))
+            if(checkName())
             {
                 std::cout << "Input a text of sms:" << std::endl;
+                std::cin.ignore();
                 std::getline(std::cin, plug);
-                std::cout << "Message: " << plug << std::endl;
+                std::cout << "Message: " << plug;
                 std::cout << " was sent to " << name << std::endl;
             }
             else
@@ -92,8 +93,9 @@ public:
             std::cout << "Input the number: " << std::endl;
             std::cin >> number;
             std::cout << "Input a text of sms:" << std::endl;
+            std::cin.ignore();
             std::getline(std::cin, plug);
-            std::cout << "Message: '" << plug << "'" << std::endl;
+            std::cout << "Message: " << plug;
             std::cout << " was sent on number +7 " << number << std::endl;
         }
     }
@@ -108,7 +110,7 @@ int main()
     {
         if(action == "add")
         {
-            Telephone::add();
+            telephone.add();
         }
         if(action == "call")
         {
