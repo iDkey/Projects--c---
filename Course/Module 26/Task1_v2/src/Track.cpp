@@ -1,5 +1,6 @@
 #include "Track.h"
 
+
 void getPlaylist(Track& track)
 {
     std::cout << "Input a track name:" << std::endl;
@@ -12,3 +13,4 @@ void getPlaylist(Track& track)
     std::cout << "Input a duration in seconds:" << std::endl;
     std::cin >> track.duration;
 }
+

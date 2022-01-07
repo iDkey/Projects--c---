@@ -1,8 +1,8 @@
+#pragma once
 #include <string>
 #include <ctime>
 #include <iostream>
 #include <iomanip>
-#pragma once
 
 class Track {
 public:
