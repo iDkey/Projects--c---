@@ -20,8 +20,8 @@ void Monitor::display(Monitor & monitor, Window & window)
     {
         for(int j = 0; j < 80; ++j)
         {
-            if(i >= window.yPosition and i <= (window.yPosition + window.height)
-                    and j >= window.xPosition and j <= (window.xPosition + window.weight))
+            if(i >= window.getYPosition() and i <= (window.getYPosition() + window.getHeight())
+                    and j >= window.getXPosition() and j <= (window.getXPosition() + window.getWeight()))
             {
                 screen[i][j] = true;
             }

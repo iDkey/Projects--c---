@@ -4,25 +4,41 @@
 
 class Abonent
 {
-public:
     unsigned long numAbonent{};
     std::string nameAbonent;
+
+public:
+    long long getNumber(){
+        return numAbonent;
+    }
+    void setNumber(long long number){
+        numAbonent = number;
+    }
+    std::string getName()
+    {
+        return nameAbonent;
+    }
+    void setName(std::string& name)
+    {
+        nameAbonent = name;
+    }
 };
 
 class Telephone
 {
-public:
     unsigned long number{};
     std::string name;
     std::vector<Abonent> phoneBook;
-
+public:
     void add()
     {
-        Abonent abonent = *new Abonent();
+        Abonent abonent;
         std::cout << "Input a number of person in 10-digit format:" << std::endl;
-        std::cin >> abonent.numAbonent;
+        std::cin >> number;
+        abonent.setNumber(number);
         std::cout << "Input a name:" << std::endl;
-        std::cin >> abonent.nameAbonent;
+        std::cin >> name;
+        abonent.setName(name);
         phoneBook.push_back(abonent);
     }
 
@@ -57,7 +73,7 @@ public:
         bool ok = false;
         for(auto & i : phoneBook)
         {
-            if (i.nameAbonent == name)
+            if (i.getName() == name)
             {
                 ok = true;
                 break;

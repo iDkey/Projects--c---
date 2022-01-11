@@ -73,11 +73,31 @@ void Window::resize(Window & window)
     std::cin >> newWeight;
     if(newHeight > 0 and newHeight <= 50 and newWeight > 0 and newWeight <= 80)
     {
-        window.height = newHeight;
-        window.weight = newWeight;
+        height = newHeight;
+        weight = newWeight;
     }
     else
     {
         std::cout << "Error" << std::endl;
     }
+}
+
+int Window::getXPosition()
+{
+    return xPosition;
+}
+
+int Window::getYPosition()
+{
+    return yPosition;
+}
+
+int Window::getHeight()
+{
+    return height;
+}
+
+int Window::getWeight()
+{
+    return weight;
 }
