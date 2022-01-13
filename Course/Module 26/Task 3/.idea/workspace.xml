@@ -12,53 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89539b33-98a7-407f-af3a-7f936176edbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/.idea/Task 1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/cache-v2-4b915f990127a9ba9629.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-d85dcc779beedeedeb61.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-59bf51f886335c3ee0ed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/directory-src-Debug-c94b7c2814d5a21df52c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/index-2022-01-10T09-27-00-0166.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/target-Task_2-Debug-eb2b7eff84994cab5352.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-085744d4b6282bc538f6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/build.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/src/CMakeFiles/Task_2.dir/main.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/src/Task_2.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/src/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/src/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 27/Task 2/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 2/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Monitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Monitor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monitor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monitor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 27/Task 2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +61,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -128,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641632860234</updated>
       <workItem from="1641632862623" duration="6103000" />
-      <workItem from="1641895714696" duration="946000" />
+      <workItem from="1641895714696" duration="3107000" />
     </task>
     <task id="LOCAL-00001" summary="immit">
       <created>1641638959843</created>
@@ -137,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641638959843</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="immit">
+      <created>1641896683661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641896683661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

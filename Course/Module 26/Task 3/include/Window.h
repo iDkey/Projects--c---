@@ -1,19 +1,21 @@
 #pragma once
 
 class Window {
+private:
     int xPosition;
     int yPosition;
     int height;
     int weight;
+
 public:
-    static void firstWindow(Window&);
-
-    void move(Window&);
-    void resize(Window&);
-
     int getXPosition();
     int getYPosition();
     int getHeight();
     int getWeight();
+
+    void move(Window&);
+    void resize(Window&);
+    
+    static void firstWindow(Window&);
 };
 

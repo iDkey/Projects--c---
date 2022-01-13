@@ -11,14 +11,20 @@ public:
 
 class Circle : Figure
 {
-public:
     double radius{};
     double pi = 3.141592;
+
+public:
+    void addRadius(double& inRadius)
+    {
+        radius = inRadius;
+    }
+
     double getFigureArea()
     {
         return pi * radius * radius;
     };
-    double upFigureArea()
+    double getUpFigureArea()
     {
         return pow(2 * radius, 2);
     };
@@ -26,14 +32,20 @@ public:
 
 class Triangle : Figure
 {
-public:
     double ribLength{};
     double p = (ribLength * 3) / 2;
+
+public:
+    void addRibLength(double& inRibLength)
+    {
+        ribLength = inRibLength;
+    }
+
     double getFigureArea()
     {
         return sqrt(p * pow((p - ribLength), 3));
     };
-    double upFigureArea()
+    double getUpFigureArea()
     {
         return pow(2 * sqrt(p * pow((p - ribLength), 3)) / ribLength, 2);
     };
@@ -41,13 +53,19 @@ public:
 
 class Square : Figure
 {
-public:
     double ribLength{};
+
+public:
+    void addRibLength(double& inRibLength)
+    {
+        ribLength = inRibLength;
+    }
+
     double getFigureArea()
     {
         return ribLength * ribLength;
     };
-    double upFigureArea()
+    double getUpFigureArea()
     {
         return ribLength * ribLength;
     };
@@ -55,14 +73,24 @@ public:
 
 class Rectangle : Figure
 {
-public:
     double height{};
     double weight{};
+
+public:
+    void addHeigth(double& inHeight)
+    {
+        height = inHeight;
+    }
+    void addWeigth(double& inWeigth)
+    {
+        weight = inWeigth;
+    }
+
     double getFigureArea()
     {
         return weight * height;
     };
-    double upFigureArea()
+    double getUpFigureArea()
     {
         return weight * height;
     };
@@ -82,11 +110,13 @@ int main() {
         std::cin >> figure -> color;
         auto* circle = new Circle();
         std::cout << "Input a radius of circle:" << std::endl;
-        std::cin >> circle -> radius;
+        double inRadius;
+        std::cin >> inRadius;
+        circle ->addRadius(inRadius);
         std::cout << "Area of circle : ";
         std::cout << circle ->getFigureArea() << std::endl;
         std::cout << "Area of rectangle around circle: ";
-        std::cout << circle ->upFigureArea();
+        std::cout << circle ->getUpFigureArea();
         delete circle;
     }
     if(needFigure == "triangle")
@@ -98,11 +128,13 @@ int main() {
         std::cin >> figure -> color;
         auto* triangle = new Triangle();
         std::cout << "Input a rib length of triangle:" << std::endl;
-        std::cin >> triangle -> ribLength;
+        double inRibLength;
+        std::cin >> inRibLength;
+        triangle ->addRibLength(inRibLength);
         std::cout << "Area of triangle : ";
         std::cout << triangle ->getFigureArea() << std::endl;
         std::cout << "Area of rectangle around triangle: ";
-        std::cout << triangle ->upFigureArea();
+        std::cout << triangle ->getUpFigureArea();
         delete triangle;
     }
     if(needFigure == "square")
@@ -114,11 +146,13 @@ int main() {
         std::cin >> figure -> color;
         auto* square = new Square();
         std::cout << "Input a rib length of square:" << std::endl;
-        std::cin >> square -> ribLength;
+        double inRibLength;
+        std::cin >> inRibLength;
+        square ->addRibLength(inRibLength);
         std::cout << "Area of square : ";
         std::cout << square ->getFigureArea() << std::endl;
         std::cout << "Area of rectangle around square: ";
-        std::cout << square ->upFigureArea();
+        std::cout << square ->getUpFigureArea();
         delete square;
     }
     if(needFigure == "rectangle")
@@ -130,13 +164,17 @@ int main() {
         std::cin >> figure -> color;
         auto* rectangle = new Rectangle();
         std::cout << "Input a height of rectangle:" << std::endl;
-        std::cin >> rectangle -> height;
+        double inHeigth;
+        std::cin >> inHeigth;
+        rectangle ->addHeigth(inHeigth);
         std::cout << "Input a weight of rectangle:" << std::endl;
-        std::cin >> rectangle -> weight;
+        double inWeigth;
+        std::cin >> inWeigth;
+        rectangle ->addWeigth(inWeigth);
         std::cout << "Area of square : ";
         std::cout << rectangle ->getFigureArea() << std::endl;
         std::cout << "Area of rectangle around rectangle: ";
-        std::cout << rectangle ->upFigureArea();
+        std::cout << rectangle ->getUpFigureArea();
         delete rectangle;
     }
     delete figure;
