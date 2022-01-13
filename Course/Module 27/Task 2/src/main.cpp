@@ -15,12 +15,12 @@ class Circle : Figure
     double pi = 3.141592;
 
 public:
+
     void addRadius(double& inRadius)
     {
         radius = inRadius;
     }
-
-    double getFigureArea()
+    double getFigureArea() const
     {
         return pi * radius * radius;
     };
@@ -36,16 +36,16 @@ class Triangle : Figure
     double p = (ribLength * 3) / 2;
 
 public:
+
     void addRibLength(double& inRibLength)
     {
         ribLength = inRibLength;
     }
-
-    double getFigureArea()
+    double getFigureArea() const
     {
         return sqrt(p * pow((p - ribLength), 3));
     };
-    double getUpFigureArea()
+    double getUpFigureArea() const
     {
         return pow(2 * sqrt(p * pow((p - ribLength), 3)) / ribLength, 2);
     };
@@ -56,16 +56,17 @@ class Square : Figure
     double ribLength{};
 
 public:
+
     void addRibLength(double& inRibLength)
     {
         ribLength = inRibLength;
     }
 
-    double getFigureArea()
+    double getFigureArea() cosnt
     {
         return ribLength * ribLength;
     };
-    double getUpFigureArea()
+    double getUpFigureArea() const
     {
         return ribLength * ribLength;
     };
@@ -77,6 +78,7 @@ class Rectangle : Figure
     double weight{};
 
 public:
+
     void addHeigth(double& inHeight)
     {
         height = inHeight;
@@ -86,15 +88,24 @@ public:
         weight = inWeigth;
     }
 
-    double getFigureArea()
+    double getFigureArea() const
     {
         return weight * height;
     };
-    double getUpFigureArea()
+    double getUpFigureArea() const
     {
         return weight * height;
     };
 };
+
+void getGeneralData(auto& figure)
+{
+    std::cout << "Input a centre coordinates:" << std::endl;
+    std::cin >> figure -> xCentre;
+    std::cin >> figure -> yCentre;
+    std::cout << "Input a figure's color:" << std::endl;
+    std::cin >> figure -> color;
+}
 
 int main() {
     std::string needFigure;
@@ -103,11 +114,7 @@ int main() {
     auto* figure = new Figure();
     if(needFigure == "circle")
     {
-        std::cout << "Input a centre coordinates:" << std::endl;
-        std::cin >> figure -> xCentre;
-        std::cin >> figure -> yCentre;
-        std::cout << "Input a figure's color:" << std::endl;
-        std::cin >> figure -> color;
+        getGeneralData(figure);
         auto* circle = new Circle();
         std::cout << "Input a radius of circle:" << std::endl;
         double inRadius;
@@ -121,11 +128,7 @@ int main() {
     }
     if(needFigure == "triangle")
     {
-        std::cout << "Input a centre coordinates:" << std::endl;
-        std::cin >> figure -> xCentre;
-        std::cin >> figure -> yCentre;
-        std::cout << "Input a figure's color:" << std::endl;
-        std::cin >> figure -> color;
+        getGeneralData(figure);
         auto* triangle = new Triangle();
         std::cout << "Input a rib length of triangle:" << std::endl;
         double inRibLength;
@@ -139,11 +142,7 @@ int main() {
     }
     if(needFigure == "square")
     {
-        std::cout << "Input a centre coordinates:" << std::endl;
-        std::cin >> figure -> xCentre;
-        std::cin >> figure -> yCentre;
-        std::cout << "Input a figure's color:" << std::endl;
-        std::cin >> figure -> color;
+        getGeneralData(figure);
         auto* square = new Square();
         std::cout << "Input a rib length of square:" << std::endl;
         double inRibLength;
@@ -157,11 +156,7 @@ int main() {
     }
     if(needFigure == "rectangle")
     {
-        std::cout << "Input a centre coordinates:" << std::endl;
-        std::cin >> figure -> xCentre;
-        std::cin >> figure -> yCentre;
-        std::cout << "Input a figure's color:" << std::endl;
-        std::cin >> figure -> color;
+        getGeneralData(figure);
         auto* rectangle = new Rectangle();
         std::cout << "Input a height of rectangle:" << std::endl;
         double inHeigth;
