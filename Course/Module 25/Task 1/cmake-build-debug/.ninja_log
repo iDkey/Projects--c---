@@ -1,0 +1,17 @@
+# ninja log v5
+1	1169	6624810083317396	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+1176	1779	6624810089397617	src/Task_1.exe	e0a4d1570202bac2
+3	627	6624818602450013	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+627	747	6624818603627496	src/Task_1.exe	e0a4d1570202bac2
+2	650	6624820949658674	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+650	778	6624820950910500	src/Task_1.exe	e0a4d1570202bac2
+3	671	6624822864066912	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+671	790	6624822865223306	src/Task_1.exe	e0a4d1570202bac2
+2	622	6624824799986067	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+623	741	6624824801145477	src/Task_1.exe	e0a4d1570202bac2
+2	652	6624825523577948	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+653	766	6624825524695243	src/Task_1.exe	e0a4d1570202bac2
+2	627	6624825991107357	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+627	745	6624825992264460	src/Task_1.exe	e0a4d1570202bac2
+3	704	6624827421525733	src/CMakeFiles/Task_1.dir/main.cpp.obj	a4a0c95baa91a100
+704	840	6624827422869371	src/Task_1.exe	e0a4d1570202bac2
