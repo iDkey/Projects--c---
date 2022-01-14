@@ -4,7 +4,6 @@
 #include <string>
 
 std::mutex acesToArrival;
-bool stationIsFree = true;
 
 void moveTrain(int timeTrain, char typeTrain)
 {
@@ -17,7 +16,6 @@ void moveTrain(int timeTrain, char typeTrain)
         {
             acesToArrival.try_lock();
             std::cout << "Train " << typeTrain << " has arrived" << std::endl;
-            stationIsFree = false;
             std::string departure;
             while(departure != "depart")
             {
@@ -25,7 +23,6 @@ void moveTrain(int timeTrain, char typeTrain)
                 std::cin >> departure;
             }
             std::cout << "Train " << typeTrain << " has departed" << std::endl;
-            stationIsFree = true;
             acesToArrival.unlock();
             break;
         }
@@ -38,10 +35,6 @@ void moveTrain(int timeTrain, char typeTrain)
             }
         }
     }
-
-
-
-
 }
 
 int getTravelTime(int trainNumber)
