@@ -9,69 +9,6 @@ public:
     std::string color;
 };
 
-class Circle : Figure
-{
-    double radius{};
-    double pi = 3.141592;
-
-public:
-
-    void addRadius(double& inRadius)
-    {
-        radius = inRadius;
-    }
-    double getFigureArea() const
-    {
-        return pi * radius * radius;
-    };
-    double getUpFigureArea()
-    {
-        return pow(2 * radius, 2);
-    };
-};
-
-class Triangle : Figure
-{
-    double ribLength{};
-    double p = (ribLength * 3) / 2;
-
-public:
-
-    void addRibLength(double& inRibLength)
-    {
-        ribLength = inRibLength;
-    }
-    double getFigureArea() const
-    {
-        return sqrt(p * pow((p - ribLength), 3));
-    };
-    double getUpFigureArea() const
-    {
-        return pow(2 * sqrt(p * pow((p - ribLength), 3)) / ribLength, 2);
-    };
-};
-
-class Square : Figure
-{
-    double ribLength{};
-
-public:
-
-    void addRibLength(double& inRibLength)
-    {
-        ribLength = inRibLength;
-    }
-
-    double getFigureArea() cosnt
-    {
-        return ribLength * ribLength;
-    };
-    double getUpFigureArea() const
-    {
-        return ribLength * ribLength;
-    };
-};
-
 class Rectangle : Figure
 {
     double height{};
@@ -95,6 +32,77 @@ public:
     double getUpFigureArea() const
     {
         return weight * height;
+    };
+
+    Rectangle getRectangle(double aSide, double bSide)
+    {
+        height = aSide;
+        weight = bSide;
+        return Rectangle(width, height);
+    }
+};
+
+class Circle : Figure
+{
+    double radius{};
+    double pi = 3.141592;
+
+public:
+
+    void addRadius(double& inRadius)
+    {
+        radius = inRadius;
+    }
+    double getFigureArea() const
+    {
+        return pi * radius * radius;
+    };
+    void getUpFigureArea()
+    {
+        rectangle.getRectangle(radius * 2, radius * 2);
+    };
+};
+
+class Triangle : Figure
+{
+    double ribLength{};
+    double p = (ribLength * 3) / 2;
+
+public:
+
+    void addRibLength(double& inRibLength)
+    {
+        ribLength = inRibLength;
+    }
+    double getFigureArea() const
+    {
+        return sqrt(p * pow((p - ribLength), 3));
+    };
+    void getUpFigureArea() const
+    {
+        rectangle.getRectangle(sqrt(3 * ribLength * ribLength / 4), ribLength);
+    };
+};
+
+class Square : Figure
+{
+    double ribLength{};
+
+public:
+
+    void addRibLength(double& inRibLength)
+    {
+        ribLength = inRibLength;
+    }
+
+    double getFigureArea() cosnt
+    {
+        return ribLength * ribLength;
+    };
+    void getUpFigureArea()
+    {
+        Rectangle rectangle;
+        rectangle.getRectangle(ribLength, ribLength);
     };
 };
 
