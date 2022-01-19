@@ -33,12 +33,17 @@ public:
     {
         return weight * height;
     };
-
-    Rectangle getRectangle(double aSide, double bSide)
+    Rectangle getRactangle()
     {
-        height = aSide;
-        weight = bSide;
-        return Rectangle(width, height);
+        return Rectangle();
+    }
+    Rectangle()
+    {
+
+    }
+    Rectangle(double sideA, double sideB): height(sideA), weight(sideB)
+    {
+
     }
 };
 
@@ -57,9 +62,10 @@ public:
     {
         return pi * radius * radius;
     };
-    void getUpFigureArea()
+    Rectangle getRactangle()
     {
-        rectangle.getRectangle(radius * 2, radius * 2);
+        Rectangle rectangle(radius * 2, radius * 2);
+        return Rectangle();
     };
 };
 
@@ -78,9 +84,10 @@ public:
     {
         return sqrt(p * pow((p - ribLength), 3));
     };
-    void getUpFigureArea() const
+    Rectangle getRactangle() const
     {
-        rectangle.getRectangle(sqrt(3 * ribLength * ribLength / 4), ribLength);
+        Rectangle rectangle(sqrt(3 * ribLength * ribLength / 4), ribLength);
+        return Rectangle();
     };
 };
 
@@ -95,18 +102,18 @@ public:
         ribLength = inRibLength;
     }
 
-    double getFigureArea() cosnt
+    double getFigureArea() const
     {
         return ribLength * ribLength;
     };
-    void getUpFigureArea()
+    Rectangle getRactangle()
     {
-        Rectangle rectangle;
-        rectangle.getRectangle(ribLength, ribLength);
+        Rectangle rectangle(ribLength, ribLength);
+        return Rectangle();
     };
 };
 
-void getGeneralData(auto& figure)
+void getGeneralData(Figure* figure)
 {
     std::cout << "Input a centre coordinates:" << std::endl;
     std::cin >> figure -> xCentre;
@@ -130,8 +137,6 @@ int main() {
         circle ->addRadius(inRadius);
         std::cout << "Area of circle : ";
         std::cout << circle ->getFigureArea() << std::endl;
-        std::cout << "Area of rectangle around circle: ";
-        std::cout << circle ->getUpFigureArea();
         delete circle;
     }
     if(needFigure == "triangle")
@@ -144,8 +149,6 @@ int main() {
         triangle ->addRibLength(inRibLength);
         std::cout << "Area of triangle : ";
         std::cout << triangle ->getFigureArea() << std::endl;
-        std::cout << "Area of rectangle around triangle: ";
-        std::cout << triangle ->getUpFigureArea();
         delete triangle;
     }
     if(needFigure == "square")
@@ -158,8 +161,6 @@ int main() {
         square ->addRibLength(inRibLength);
         std::cout << "Area of square : ";
         std::cout << square ->getFigureArea() << std::endl;
-        std::cout << "Area of rectangle around square: ";
-        std::cout << square ->getUpFigureArea();
         delete square;
     }
     if(needFigure == "rectangle")
@@ -176,8 +177,6 @@ int main() {
         rectangle ->addWeigth(inWeigth);
         std::cout << "Area of square : ";
         std::cout << rectangle ->getFigureArea() << std::endl;
-        std::cout << "Area of rectangle around rectangle: ";
-        std::cout << rectangle ->getUpFigureArea();
         delete rectangle;
     }
     delete figure;

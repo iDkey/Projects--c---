@@ -2,6 +2,7 @@
 #include <ctime>
 #include <random>
 #include <cassert>
+#include <vector>
 
 int getRandomNumber(int leftBorder, int rightBorder)
 {
@@ -15,6 +16,7 @@ class Worker
     bool isBusy = false;
 
 public:
+
     bool getIsBusy() const
     {
         return isBusy;
@@ -23,7 +25,7 @@ public:
     {
         isBusy = true;
     }
-    Worker(bool inIsBusy): isBusy(inIsBusy)
+    explicit Worker(bool inIsBusy): isBusy(inIsBusy)
     {
         assert(inIsBusy == false);
     }
@@ -32,8 +34,9 @@ public:
 class MidManager
 {
     int countWorkers{};
-    int midManagerIndex;
-    Worker** workers = nullptr;
+    int midManagerIndex{};
+    //Worker** workers = nullptr;
+    std::vector<Worker*> workers;
     int countTasksForCommand{};
 
 public:
@@ -64,13 +67,15 @@ public:
     {
         return midManagerIndex;
     }
-    MidManager(int inCountWorkers): countWorkers(inCountWorkers)
+    explicit MidManager(int inCountWorkers): countWorkers(inCountWorkers)
     {
         assert(inCountWorkers > 0);
-        workers = new Worker*[countWorkers];
+        //workers = new Worker*[countWorkers];
         for(int i = 0; i < countWorkers; ++i)
         {
-            workers[i] = new Worker(false);
+            //workers[i] = new Worker(false);
+            auto* worker = new Worker(false);
+            workers.push_back(worker);
         }
     }
 };
@@ -79,17 +84,14 @@ class HeadMaster
 {
     int generalTask{};
     int countCommand{};
-    MidManager** midManagers = nullptr;
+    //MidManager** midManagers = nullptr;
+    std::vector<MidManager*> midManagers;
 
 public:
 
     void setGeneralTask(int inGeneralTask)
     {
         generalTask = inGeneralTask;
-    }
-    int getGeneralTask() const
-    {
-        return generalTask;
     }
     int getCountCommand() const
     {
@@ -104,13 +106,15 @@ public:
     explicit HeadMaster(int inCountCommand): countCommand(inCountCommand)
     {
         assert(inCountCommand > 0);
-        midManagers = new MidManager*[countCommand];
+        //midManagers = new MidManager*[countCommand];
         for(int i = 0; i < countCommand; ++i)
         {
             int inCountWorkers;
             std::cout << "Input count of workers in command #" << i + 1 << std::endl;
             std::cin >> inCountWorkers;
-            midManagers[i] = new MidManager(inCountWorkers);
+            auto* midManager = new MidManager(inCountWorkers);
+            midManagers.push_back(midManager);
+            //midManagers[i] = new MidManager(inCountWorkers);
             midManagers[i]->setMidManagerIndex(i);
         }
     }
@@ -174,5 +178,4 @@ void setWork(auto& headMaster)
 int main() {
     auto headMaster = firstSetting();
     setWork(headMaster);
-
 }

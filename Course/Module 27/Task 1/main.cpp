@@ -14,7 +14,6 @@ int getRandomNum(int leftBorder, int rightBorder)
 
 class MidBranch
 {
-
     std::string elfName;
 
 public:
@@ -35,13 +34,11 @@ class BigBranch
 {
     int countMidBranch = 0;
     MidBranch** midBranch;
-
+    std::string elfNameBB;
+    int countElf = 1;
 public:
 
-    void addCountMidBranch(int inCountMidBranch)
-    {
-        countMidBranch = inCountMidBranch;
-    }
+
     int getCountMidBranch() const
     {
         return countMidBranch;
@@ -50,7 +47,8 @@ public:
     {
         return midBranch[index];
     }
-    BigBranch(int inCountMidBranch): countMidBranch(inCountMidBranch)
+    BigBranch(int inCountMidBranch,std::string inElfNameBB):
+            countMidBranch(inCountMidBranch), elfNameBB(inElfNameBB)
     {
         assert(inCountMidBranch == 2 or inCountMidBranch == 3);
         midBranch = new MidBranch*[countMidBranch];
@@ -61,6 +59,11 @@ public:
             std::cin >> name;
             midBranch[i] = new MidBranch(name);
         }
+    }
+
+    int getCountElf() const
+    {
+        return 1;
     }
 };
 
@@ -89,7 +92,10 @@ public:
         bigBranch = new BigBranch*[countBigBranch];
         for(int i = 0; i < countBigBranch; ++i)
         {
-            bigBranch[i] = new BigBranch(getRandomNum(2, 3));
+            std::string inElfName;
+            std::cout << "Input name for elf:" << std::endl;
+            std::cin >> inElfName;
+            bigBranch[i] = new BigBranch(getRandomNum(2, 3), inElfName);
         }
     }
 };
@@ -139,6 +145,7 @@ int findElfName(auto& needElfName, auto& forest)
                 if(needElfName == forest->getTreesAt(i)->getBigBranchAt(j)->getMidBranchAt(k)->getElfName())
                 {
                     neighbors = forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch() - 1;
+                    neighbors += forest->getTreesAt(i)->getBigBranchAt(j)->getCountElf();
                 }
             }
         }
