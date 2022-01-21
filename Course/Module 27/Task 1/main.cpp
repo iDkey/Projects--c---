@@ -65,6 +65,10 @@ public:
     {
         return 1;
     }
+    std::string getElfName()
+    {
+        return elfNameBB;
+    }
 };
 
 class Tree
@@ -107,10 +111,6 @@ class Forest {
 
 public:
 
-    void addCountTrees(int inCountTrees)
-    {
-        countTrees = inCountTrees;
-    }
     int getCountTrees() const
     {
         return countTrees;
@@ -140,6 +140,15 @@ int findElfName(auto& needElfName, auto& forest)
     {
         for(int j = 0; j < forest->getTreesAt(i)->getCountBigBranch(); j++)
         {
+            if(needElfName == forest->getTreesAt(i)->getBigBranchAt(j)->getElfName())
+            {
+                neighbors = 1;
+                neighbors += forest->getTreesAt(i)->getBigBranchAt(j)->getCountElf();
+                for(int k = 0; k < forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch(); k++)
+                {
+                    neighbors += forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch();
+                }
+            }
             for(int k = 0; k < forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch(); k++)
             {
                 if(needElfName == forest->getTreesAt(i)->getBigBranchAt(j)->getMidBranchAt(k)->getElfName())
