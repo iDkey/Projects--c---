@@ -47,7 +47,7 @@ public:
     {
         return midBranch[index];
     }
-    BigBranch(int inCountMidBranch,std::string inElfNameBB):
+    BigBranch(int inCountMidBranch,std::string& inElfNameBB):
             countMidBranch(inCountMidBranch), elfNameBB(inElfNameBB)
     {
         assert(inCountMidBranch == 2 or inCountMidBranch == 3);
@@ -63,9 +63,9 @@ public:
 
     int getCountElf() const
     {
-        return 1;
+        return countElf;
     }
-    std::string getElfName()
+    std::string getElfName() const
     {
         return elfNameBB;
     }
@@ -133,7 +133,7 @@ public:
     }
 };
 
-int findElfName(auto& needElfName, auto& forest)
+int findElfName(std::string& needElfName, Forest*& forest)
 {
     int neighbors = -1;
     for(int  i = 0; i < forest->getCountTrees(); ++i)
@@ -142,12 +142,12 @@ int findElfName(auto& needElfName, auto& forest)
         {
             if(needElfName == forest->getTreesAt(i)->getBigBranchAt(j)->getElfName())
             {
-                neighbors = 1;
-                neighbors += forest->getTreesAt(i)->getBigBranchAt(j)->getCountElf();
+                neighbors = 0;
                 for(int k = 0; k < forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch(); k++)
                 {
                     neighbors += forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch();
                 }
+                return neighbors;
             }
             for(int k = 0; k < forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch(); k++)
             {
@@ -155,6 +155,7 @@ int findElfName(auto& needElfName, auto& forest)
                 {
                     neighbors = forest->getTreesAt(i)->getBigBranchAt(j)->getCountMidBranch() - 1;
                     neighbors += forest->getTreesAt(i)->getBigBranchAt(j)->getCountElf();
+                    return neighbors;
                 }
             }
         }
