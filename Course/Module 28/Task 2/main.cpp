@@ -14,7 +14,7 @@ void moveTrain(int timeTrain, char typeTrain)
     {
         if(acesToArrival.try_lock())
         {
-            acesToArrival.try_lock();
+            //acesToArrival.try_lock();
             std::cout << "Train " << typeTrain << " has arrived" << std::endl;
             std::string departure;
             while(departure != "depart")
