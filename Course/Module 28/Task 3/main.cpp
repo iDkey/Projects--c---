@@ -11,6 +11,7 @@ std::vector<std::string> workDone;
 std::vector<std::string> waitingForDelivery;
 bool delivered = false;
 bool cooked = false;
+std::string dishes[] = {"pizza", "soup", "steak", "salad", "sushi"};
 
 int getRandomNumber(int leftBorder, int rightBorder)
 {
@@ -19,10 +20,10 @@ int getRandomNumber(int leftBorder, int rightBorder)
     return randomNumber(gen);
 }
 
-void cooking(std::string dish)
+void cooking(const std::string& dish)
 {
-    kitchenWork.lock();
     std::this_thread::sleep_for(std::chrono::seconds(getRandomNumber(5, 15)));
+    kitchenWork.lock();
     std::cout << "The " << dish << " is getting ready" << std::endl;
     waitingForDelivery.push_back(dish);
     kitchenWork.unlock();
@@ -42,25 +43,27 @@ void delivering()
     delivered = false;
 }
 
+void order(int sleepTime)
+{
+    std::this_thread::sleep_for(std::chrono::seconds(sleepTime));
+    std::thread dishOrder (cooking, dishes[getRandomNumber(0,4)]);
+    dishOrder.detach();
+}
+
 int main() {
-    std::string dishes[] = {"pizza", "soup", "steak", "salad", "sushi"};
-    while(true)
+
+    while(workDone.size() < 10)
     {
         if(!cooked)
         {
-            std::this_thread::sleep_for(std::chrono::seconds(getRandomNumber(5, 10)));
-            std::thread order (cooking, dishes[getRandomNumber(0,4)]);
-            order.detach();
-            if(order.joinable()) order.join();
+            std::thread ordering(order, getRandomNumber(5, 10));
+            ordering.join();
         }
         if(!delivered)
         {
             delivered = true;
             std::thread delivery (delivering);
             delivery.detach();
-            if(delivery.joinable()) delivery.join();
         }
-        if(workDone.size() >= 10)
-            return 0;
     }
 }
