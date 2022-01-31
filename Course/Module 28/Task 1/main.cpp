@@ -1,4 +1,3 @@
-//check
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -7,27 +6,18 @@
 
 std::vector<int> results = {0, 0, 0, 0, 0, 0};
 std::vector<int> swimmerDistance = {0, 0, 0, 0, 0, 0};
+std::mutex aces;
 
-bool checkEnd()
+bool checkEnd(int swimmerNumber)
 {
-    bool allEnd = true;
-    for(auto i : swimmerDistance)
-    {
-        if(i < 100)
-        {
-            allEnd = false;
-            return allEnd;
-        }
-    }
-    return allEnd;
+    return swimmerDistance[swimmerNumber] >= 100 ? true : false;
 }
 
 void swimming(int speed, int numSwimmer, std::string name)
 {
-    std::mutex aces;
     int countTime = 0;
     aces.lock();
-    while(!checkEnd())
+    while(!checkEnd(numSwimmer))
     {
         std::this_thread::sleep_for(std::chrono::seconds(1));
         countTime++;
