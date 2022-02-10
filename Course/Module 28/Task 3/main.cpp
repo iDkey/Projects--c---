@@ -20,51 +20,55 @@ int getRandomNumber(int leftBorder, int rightBorder)
     return randomNumber(gen);
 }
 
-void cooking(std::string dish)
-{
-    std::cout << dish << " waiting for cooking" << std::endl;
-    acesKitchenMtx.lock();
-    std::cout << dish << " is cooking" << std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(5));
-    std::cout << dish << " is ready for delivering" << std::endl;
-    acesDeliveryMtx.lock();
-    waitingForDelivery.push_back(dish);
-    acesDeliveryMtx.unlock();
-    acesKitchenMtx.unlock();
-}
-
 void delivering()
 {
-    std::this_thread::sleep_for(std::chrono::seconds(30));
-    acesDeliveryMtx.lock();
-    for(auto & i : waitingForDelivery)
+    while(workDone.size() < 10)
     {
-        workDone.push_back(i);
-        std::cout << i << " has delivered" << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(30));
+
+        acesDeliveryMtx.lock();
+        for(auto & i : waitingForDelivery)
+        {
+            workDone.push_back(i);
+            std::cout << i << " has delivered" << std::endl;
+        }
+        waitingForDelivery.clear();
+        acesDeliveryMtx.unlock();
     }
-    waitingForDelivery.clear();
-    acesDeliveryMtx.unlock();
+}
+
+void cooking(std::string dish)
+{
+    while(workDone.size() < 10)
+    {
+        std::cout << dish << " waiting for cooking" << std::endl;
+
+        acesKitchenMtx.lock();
+        std::cout << dish << " is cooking" << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+        std::cout << dish << " is ready for delivering" << std::endl;
+        acesKitchenMtx.unlock();
+
+        acesDeliveryMtx.lock();
+        waitingForDelivery.push_back(dish);
+        acesDeliveryMtx.unlock();
+    }
 }
 
 void order()
 {
-    //acesKitchenMtx.lock();
-    std::this_thread::sleep_for(std::chrono::seconds(5));
-    std::thread kitchen (cooking, dishes[getRandomNumber(0, 4)]);
-    kitchen.detach();
-    //acesKitchenMtx.unlock();
-}
-
-int main() {
     while(workDone.size() < 10)
     {
-        std::thread orders (order);
-        std::thread deliver (delivering);
-        orders.detach();
-        //std::thread kitchen (cooking, dishes[getRandomNumber(0, 4)]);
-        //kitchen.detach();
-        deliver.join();
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+        std::thread kitchen (cooking, dishes[getRandomNumber(0, 4)]);
+        kitchen.detach();
     }
+}
 
-
+int main()
+{
+    std::thread orders (order);
+    std::thread deliver (delivering);
+    orders.detach();
+    deliver.join();
 }
