@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 1/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"curl-populate"
+		],
+		"name" : "curl-populate"
+	}
+}
