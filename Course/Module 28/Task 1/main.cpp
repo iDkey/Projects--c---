@@ -10,27 +10,30 @@ std::mutex aces;
 
 bool checkEnd(int swimmerNumber)
 {
-    return swimmerDistance[swimmerNumber] >= 100 ? true : false;
+    return swimmerDistance[swimmerNumber] >= 100;
 }
 
 void swimming(int speed, int numSwimmer, std::string name)
 {
     int countTime = 0;
-    aces.lock();
+
     while(!checkEnd(numSwimmer))
     {
         std::this_thread::sleep_for(std::chrono::seconds(1));
         countTime++;
         if(swimmerDistance[numSwimmer] < 100) {
+            aces.lock();
             swimmerDistance[numSwimmer] += speed;
+            aces.unlock();
             if (swimmerDistance[numSwimmer] >= 100) {
+                aces.lock();
                 swimmerDistance[numSwimmer] = 100;
                 results[numSwimmer] = countTime;
+                aces.unlock();
             }
         }
         std::cout << name << " swam " << swimmerDistance[numSwimmer] << " meters" << std::endl;
     }
-    aces.unlock();
 }
 
 void sortingForResults(std::vector<std::string>& swimmerName)
