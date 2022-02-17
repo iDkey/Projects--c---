@@ -10,7 +10,9 @@ std::mutex aces;
 
 bool checkEnd(int swimmerNumber)
 {
+    aces.lock();
     return swimmerDistance[swimmerNumber] >= 100;
+    aces.unlock();
 }
 
 void swimming(int speed, int numSwimmer, std::string name)
