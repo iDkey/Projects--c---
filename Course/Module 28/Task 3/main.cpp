@@ -6,9 +6,10 @@
 #include <mutex>
 #include <vector>
 
-std::mutex acesKitchenMtx;
-std::mutex acesDeliveryMtx;
-std::vector<std::string> workDone;
+std::mutex accesCook;
+std::mutex accesReadyForDeliver;
+std::mutex accesDeliver;
+int workDone = 0;
 std::vector<std::string> waitingForDelivery;
 
 std::string dishes[] = {"pizza", "soup", "steak", "salad", "sushi"};
@@ -22,40 +23,57 @@ int getRandomNumber(int leftBorder, int rightBorder)
 
 void delivering()
 {
-    while(workDone.size() < 10)
+    bool exit = false;
+    do
+    {
+        std::this_thread::sleep_for(std::chrono::seconds(30));
+        accesReadyForDeliver.lock();
+        for(auto & i : waitingForDelivery)
+        {
+            accesDeliver.lock();
+            workDone++;
+
+            accesDeliver.unlock();
+            std::cout << i << " has delivered" << std::endl;
+        }
+        waitingForDelivery.clear();
+
+        accesReadyForDeliver.unlock();
+
+        accesDeliver.lock();
+        exit = workDone >= 10;
+        accesDeliver.unlock();
+    }while(!exit);
+    /*while(workDone.size() < 10)
     {
         std::this_thread::sleep_for(std::chrono::seconds(30));
 
         acesDeliveryMtx.lock();
-        for(auto & i : waitingForDelivery)
-        {
-            workDone.push_back(i);
-            std::cout << i << " has delivered" << std::endl;
-        }
+
         waitingForDelivery.clear();
         acesDeliveryMtx.unlock();
-    }
+    }*/
 }
 
 void cooking(std::string dish)
 {
-    while(workDone.size() < 10)
-    {
-        std::cout << dish << " waiting for cooking" << std::endl;
+    std::cout << dish << " waiting for cooking" << std::endl;
 
-        acesKitchenMtx.lock();
-        std::cout << dish << " is cooking" << std::endl;
-        std::this_thread::sleep_for(std::chrono::seconds(5));
-        std::cout << dish << " is ready for delivering" << std::endl;
-        acesKitchenMtx.unlock();
+    accesCook.lock();
+    std::cout << dish << " is cooking" << std::endl;
 
-        acesDeliveryMtx.lock();
-        waitingForDelivery.push_back(dish);
-        acesDeliveryMtx.unlock();
-    }
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+
+    std::cout << dish << " is ready for delivering" << std::endl;
+
+    accesReadyForDeliver.lock();
+    waitingForDelivery.push_back(dish);
+    accesReadyForDeliver.unlock();
+
+    accesCook.unlock();
 }
 
-void order()
+/*void order()
 {
     while(workDone.size() < 10)
     {
@@ -63,12 +81,26 @@ void order()
         std::thread kitchen (cooking, dishes[getRandomNumber(0, 4)]);
         kitchen.detach();
     }
-}
+}*/
 
 int main()
 {
-    std::thread orders (order);
+    /*std::thread orders (order);
     std::thread deliver (delivering);
     orders.detach();
-    deliver.join();
+    deliver.join();*/
+    std::thread delivery (delivering);
+    bool exit = false;
+    do
+    {
+        std::this_thread::sleep_for(std::chrono::seconds(getRandomNumber(5,5)));
+        std::thread kitchen (cooking, dishes[getRandomNumber(0, 4)]);
+        kitchen.detach();
+
+        accesDeliver.lock();
+        exit = workDone >= 10;
+
+        accesDeliver.unlock();
+    }while(!exit);
+    delivery.join();
 }

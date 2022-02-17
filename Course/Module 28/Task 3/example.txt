@@ -1,0 +1,77 @@
+#include <iostream>
+#include <cmath>
+#include <thread>
+#include <chrono>
+#include <mutex>
+#include <vector>
+
+const int MAX_DELIVERIES = 2;// сократим до 2 для  быстроты
+const std::vector<std::string> names = {"pizza", "soup", "steak", "salad", "sushi"};
+
+std::vector<int> meals;
+int total_deliveries_count = 0;
+
+std::mutex cooking_mtx;
+std::mutex meals_mtx;
+std::mutex delivered_mtx;
+
+
+void cook_next_meal(int meal)
+{
+    cooking_mtx.lock();
+    int time = (std::rand() % 11) + 5;
+    std::cout << "Cooking meal '" << names[meal] << "'" << std::endl;
+    std::this_thread::sleep_for(std::chrono::seconds(time));
+    std::cout << "Prepared meal '" << names[meal] << "'" << std::endl;
+
+    meals_mtx.lock();
+    meals.push_back(meal);
+    meals_mtx.unlock();
+
+    cooking_mtx.unlock();
+}
+
+void delivery()
+{
+    bool exit = false;
+    do
+    {
+        std::this_thread::sleep_for(std::chrono::seconds(30));
+        std::cout << "Delivery arrived!" << std::endl;
+
+        meals_mtx.lock();
+        std::cout << "Meals to deliver: ";
+        for (int i = 0; i < meals.size(); ++i)
+        {
+            std::cout << names[meals[i]] << " ";
+        }
+        std::cout << std::endl;
+        meals.clear();
+        meals_mtx.unlock();
+
+        delivered_mtx.lock();
+        exit = ++total_deliveries_count >= MAX_DELIVERIES;
+        delivered_mtx.unlock();
+    } while (!exit);
+}
+
+int main()
+{
+    std::thread deliveries(delivery);
+    bool exit = false;
+    do
+    {
+        int time = (std::rand() % 6) + 5;
+
+        std::this_thread::sleep_for(std::chrono::seconds(time));
+        int mealIndex = std::rand() % names.size();
+        std::cout << "New meal ordered: " << names[mealIndex] << std::endl;
+        std::thread next_meal(cook_next_meal, mealIndex);
+        next_meal.detach();
+
+        delivered_mtx.lock();
+        exit = total_deliveries_count >= MAX_DELIVERIES;
+        delivered_mtx.unlock();
+    } while (!exit);
+    deliveries.join();
+}
