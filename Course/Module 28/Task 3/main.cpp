@@ -44,15 +44,6 @@ void delivering()
         exit = workDone >= 10;
         accesDeliver.unlock();
     }while(!exit);
-    /*while(workDone.size() < 10)
-    {
-        std::this_thread::sleep_for(std::chrono::seconds(30));
-
-        acesDeliveryMtx.lock();
-
-        waitingForDelivery.clear();
-        acesDeliveryMtx.unlock();
-    }*/
 }
 
 void cooking(std::string dish)
@@ -73,22 +64,8 @@ void cooking(std::string dish)
     accesCook.unlock();
 }
 
-/*void order()
-{
-    while(workDone.size() < 10)
-    {
-        std::this_thread::sleep_for(std::chrono::seconds(5));
-        std::thread kitchen (cooking, dishes[getRandomNumber(0, 4)]);
-        kitchen.detach();
-    }
-}*/
-
 int main()
 {
-    /*std::thread orders (order);
-    std::thread deliver (delivering);
-    orders.detach();
-    deliver.join();*/
     std::thread delivery (delivering);
     bool exit = false;
     do
