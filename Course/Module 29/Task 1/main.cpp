@@ -7,11 +7,11 @@ protected:
     std::string sound;
 public:
 
-    virtual void voice()
+    virtual void voice(std::string animal1, std::string animal2)
     {
         std::cout << "unknown voice" << std::endl;
     }
-    void setSound(std::string& inSound)
+    void setSound(std::string inSound)
     {
         sound = inSound;
     }
@@ -20,9 +20,18 @@ public:
 class Cat : virtual public Animal
 {
 public:
-    virtual void voice()
+    virtual void voice(std::string animal1, std::string animal2)
     {
-        std::cout << sound;
+        if(animal1 == "cat" and animal2 == "cat")
+        {
+            setSound("Purr");
+            std::cout << sound;
+        }
+        else
+        {
+            setSound("Meow");
+            std::cout << sound;
+        }
     }
 
 };
@@ -31,13 +40,22 @@ class Dog: virtual public Animal
 {
 public:
 
-    virtual void voice()
+    virtual void voice(std::string animal1, std::string animal2)
     {
-        std::cout << sound;
+        if(animal1 == "dog" and animal2 == "dog")
+        {
+            setSound("Woof");
+            std::cout << sound;
+        }
+        else
+        {
+            setSound("Bark");
+            std::cout << sound;
+        }
     }
 };
 
-void meeting(Animal*& a, Animal*& b)
+void meeting(Animal* a, Animal* b)
 {
     std::string inSound;
     std::cout << "Input first animal (dog or cat):" << std::endl;
@@ -48,44 +66,30 @@ void meeting(Animal*& a, Animal*& b)
     std::cin >> animal2;
     if(animal1 == "dog" and animal2 == "dog")
     {
-        inSound = "Woof";
-        a->setSound(inSound);
-        a->voice();
+        a->voice(animal1, animal2);
         std::cout << "-";
-        inSound = "Woof";
-        a->voice();
+        a->voice(animal1, animal2);
         std::cout << std::endl;
     }
     if(animal1 == "dog" and animal2 == "cat")
     {
-        inSound = "Bark";
-        a->setSound(inSound);
-        a->voice();
+        a->voice(animal1, animal2);
         std::cout << " ";
-        inSound = "Meow";
-        b->setSound(inSound);
-        b->voice();
+        b->voice(animal1, animal2);
         std::cout << std::endl;
     }
     if(animal1 == "cat" and animal2 == "dog")
     {
-        inSound = "Meow";
-        b->setSound(inSound);
-        b->voice();
+        b->voice(animal1, animal2);
         std::cout << " ";
-        inSound = "Bark";
-        a->setSound(inSound);
-        a->voice();
+        a->voice(animal1, animal2);
         std::cout << std::endl;
     }
     if(animal1 == "cat" and animal2 == "cat")
     {
-        inSound = "Purr";
-        b->setSound(inSound);
-        b->voice();
+        b->voice(animal1, animal2);
         std::cout << " ";
-        inSound = "Purr";
-        b->voice();
+        b->voice(animal1, animal2);
         std::cout << std::endl;
     }
 }

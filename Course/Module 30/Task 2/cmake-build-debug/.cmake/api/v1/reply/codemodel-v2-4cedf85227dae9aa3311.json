@@ -1,0 +1,204 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "_deps/cpr-build",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.cpr-build-Debug-dce57cd2edab92c87d2e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/cpr-src"
+				},
+				{
+					"build" : "_deps/curl-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.curl-build-Debug-503dd7f1fc30321e7692.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/curl-src",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "_deps/curl-build/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.curl-build.lib-Debug-8b1c12894d3fbbb2556c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/curl-src/lib",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "_deps/cpr-build/cpr",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.cpr-build.cpr-Debug-05eed47898c4ba02fc29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/cpr-src/cpr",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "_deps/cpr-build/include",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.cpr-build.include-Debug-3606ed9b8323b186647c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/cpr-src/include"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Task_2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5
+					],
+					"name" : "cpr",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "CURL",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_2-Debug-a5d87761f913bd1429c2.json",
+					"name" : "Task_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "cpr::@c4b08663df96993e8225",
+					"jsonFile" : "target-cpr-Debug-921ab0fd8f1e5962b80d.json",
+					"name" : "cpr",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "libcurl::@7349aeacaff41deceb36",
+					"jsonFile" : "target-libcurl-Debug-fec8113ab4d5f1b1cae0.json",
+					"name" : "libcurl",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@b95861b2ba384b5171eb",
+					"jsonFile" : "target-uninstall-Debug-8e24c0f9854d3d4cc9d6.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug",
+		"source" : "A:/Programming/Projects--c---/Course/Module 30/Task 2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

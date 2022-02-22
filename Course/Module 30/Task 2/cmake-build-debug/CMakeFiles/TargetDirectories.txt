@@ -1,10 +1,10 @@
+A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/install/strip.dir
+A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/Task_2.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/install/local.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/install.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/edit_cache.dir
-A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/Task_1.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/list_install_components.dir
-A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/CMakeFiles/install/strip.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-build/CMakeFiles/rebuild_cache.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-build/CMakeFiles/install/local.dir
 A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-build/CMakeFiles/install.dir
