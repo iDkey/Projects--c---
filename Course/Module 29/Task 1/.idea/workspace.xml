@@ -12,236 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5dce625-90aa-4219-920f-c31437b6edd8" name="Changes" comment="Module_29_T1">
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3955e97cbb041baedaee.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7d17584252c0a8aa27f5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4cedf85227dae9aa3311.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.cmake/api/v1/reply/index-2022-02-18T07-45-47-0786.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.cmake/api/v1/reply/target-Task_2-Debug-a5d87761f913bd1429c2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/Task_1.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/Task_2.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/auth.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/cookies.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/cprtypes.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/curlholder.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/digest.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/error.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/multipart.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/ntlm.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/parameters.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/payload.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/proxies.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/session.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/timeout.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/unix_socket.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/cpr-build/cpr/CMakeFiles/cpr.dir/util.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/lib/libcpr.dll.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/lib/libcurl-d_imp.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/libcpr.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/libcurl-d.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/.idea/Tests.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3bc966ef46f911dca523.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-66efcf63392cd9701162.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-77f83a4d9d5942a0b256.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/index-2022-02-18T09-10-19-0552.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/target-Tests-Debug-fddce18229f83812288e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-085744d4b6282bc538f6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/Tests.dir/main.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Tests.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/build.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tests/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 28/Task 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 28/Task 3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Task_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Task_1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 30/Task 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 30/Task 2/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/Tests.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/Tests.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Tests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Tests.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,14 +63,14 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="pyconsole" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Task_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Task_1" TARGET_NAME="Task_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Task_1" RUN_TARGET_NAME="Task_1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -305,7 +87,12 @@
       <workItem from="1642686188045" duration="2836000" />
       <workItem from="1642742749984" duration="1202000" />
       <workItem from="1644481031164" duration="336000" />
-      <workItem from="1645541819973" duration="3529000" />
+      <workItem from="1645541819973" duration="3924000" />
+      <workItem from="1645709528850" duration="42000" />
+      <workItem from="1645710017213" duration="953000" />
+      <workItem from="1645791634520" duration="4748000" />
+      <workItem from="1645806075586" duration="1892000" />
+      <workItem from="1645862865968" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="immit">
       <created>1642688394307</created>
@@ -321,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642688440127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Module_29_T1">
+      <created>1645545410657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645545410657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

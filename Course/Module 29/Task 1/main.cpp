@@ -1,97 +1,113 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 
 class Animal
 {
-protected:
-    std::string sound;
 public:
-
-    virtual void voice(std::string animal1, std::string animal2)
-    {
-        std::cout << "unknown voice" << std::endl;
-    }
-    void setSound(std::string inSound)
-    {
-        sound = inSound;
-    }
+    virtual void meet(Animal*&) = 0;
 };
 
-class Cat : virtual public Animal
+class Cat : public Animal
 {
 public:
-    virtual void voice(std::string animal1, std::string animal2)
-    {
-        if(animal1 == "cat" and animal2 == "cat")
-        {
-            setSound("Purr");
-            std::cout << sound;
-        }
-        else
-        {
-            setSound("Meow");
-            std::cout << sound;
-        }
-    }
-
+    virtual void meet(Animal*&);
 };
 
-class Dog: virtual public Animal
+class Dog: public Animal
 {
 public:
+    virtual void meet(Animal*&);
+};
 
-    virtual void voice(std::string animal1, std::string animal2)
+void Cat::meet(Animal*& f)
+{
+    const std::type_info& objType = typeid(f);
+    if(objType == typeid(*this))
     {
-        if(animal1 == "dog" and animal2 == "dog")
-        {
-            setSound("Woof");
-            std::cout << sound;
-        }
-        else
-        {
-            setSound("Bark");
-            std::cout << sound;
-        }
+        std::cout << "Meow";
     }
+    else
+        std::cout << "Murr";
+}
+
+void Dog::meet(Animal*& f)
+{
+    const std::type_info& objType = typeid(f);
+    if(objType == typeid(*this))
+    {
+        std::cout << "Bark";
+    }
+    else
+        std::cout << "Woof";
+}
+
+void meeting(Animal* a, Animal* b)
+{
+    a->meet(b);
+    std::cout << " ";
+    b->meet(a);
+}
+
+int main() {
+    Animal* a = new Dog();
+    Animal* b = new Cat();
+    meeting(a, b);
+
+}*/
+
+#include <iostream>
+#include <string>
+
+class Dog;
+class Cat;
+
+class Animal
+{
+public:
+    virtual void meet(Animal*) = 0;
+    virtual void meet(Cat*) = 0;
+    virtual void meet(Dog*) = 0;
+};
+
+class Cat : public Animal
+{
+public:
+    Cat() = default;
+    virtual void meet(Animal* f)
+    {
+        f->meet(this);
+    };
+    virtual void meet(Cat* a)
+    {
+        std::cout << "Murr Murr";
+    };
+    virtual void meet(Dog*)
+    {
+        std::cout << "Bark Meow";
+    };
+};
+
+class Dog: public Animal
+{
+public:
+    Dog() = default;
+    virtual void meet(Animal* f)
+    {
+        f->meet(this);
+    };
+    virtual void meet(Cat*)
+    {
+        std::cout << "Meow Bark";
+    };
+    virtual void meet(Dog*)
+    {
+        std::cout << "Woof-Woof";
+    };
 };
 
 void meeting(Animal* a, Animal* b)
 {
-    std::string inSound;
-    std::cout << "Input first animal (dog or cat):" << std::endl;
-    std::string animal1;
-    std::cin >> animal1;
-    std::cout << "Input second animal (dog or cat):" << std::endl;
-    std::string animal2;
-    std::cin >> animal2;
-    if(animal1 == "dog" and animal2 == "dog")
-    {
-        a->voice(animal1, animal2);
-        std::cout << "-";
-        a->voice(animal1, animal2);
-        std::cout << std::endl;
-    }
-    if(animal1 == "dog" and animal2 == "cat")
-    {
-        a->voice(animal1, animal2);
-        std::cout << " ";
-        b->voice(animal1, animal2);
-        std::cout << std::endl;
-    }
-    if(animal1 == "cat" and animal2 == "dog")
-    {
-        b->voice(animal1, animal2);
-        std::cout << " ";
-        a->voice(animal1, animal2);
-        std::cout << std::endl;
-    }
-    if(animal1 == "cat" and animal2 == "cat")
-    {
-        b->voice(animal1, animal2);
-        std::cout << " ";
-        b->voice(animal1, animal2);
-        std::cout << std::endl;
-    }
+    a->meet(b);
 }
 
 int main() {
