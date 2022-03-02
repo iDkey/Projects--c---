@@ -1,0 +1,2027 @@
+Determining if the function idn2_lookup_ul exists in the idn2;winmm;ws2_32;advapi32 failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_2b233 && [1/2] Building C object CMakeFiles/cmTC_2b233.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_2b233.exe
+[31mFAILED: [0mcmTC_2b233.exe 
+cmd.exe /C "cd . && "A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DCHECK_FUNCTION_EXISTS=idn2_lookup_ul  CMakeFiles/cmTC_2b233.dir/CheckFunctionExists.c.obj -o cmTC_2b233.exe -Wl,--out-implib,libcmTC_2b233.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lidn2  -lwinmm  -lws2_32  -ladvapi32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: cannot find -lidn2
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test USE_UNIX_SOCKETS failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_419d0 && [1/2] Building C object CMakeFiles/cmTC_419d0.dir/src.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_419d0.dir/src.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -DUSE_UNIX_SOCKETS  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_419d0.dir/src.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: sys/un.h: No such file or directory
+    2 | #include <sys/un.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/un.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_un *)0)->sun_path);
+  return 0;
+}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/filio.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_93648 && [1/2] Building C object CMakeFiles/cmTC_93648.dir/HAVE_SYS_FILIO_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_93648.dir/HAVE_SYS_FILIO_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_93648.dir/HAVE_SYS_FILIO_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c:7:10: fatal error: sys/filio.h: No such file or directory
+    7 | #include <sys/filio.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/ioctl.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_9f793 && [1/2] Building C object CMakeFiles/cmTC_9f793.dir/HAVE_SYS_IOCTL_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_9f793.dir/HAVE_SYS_IOCTL_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_9f793.dir/HAVE_SYS_IOCTL_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c:7:10: fatal error: sys/ioctl.h: No such file or directory
+    7 | #include <sys/ioctl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/resource.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_9f336 && [1/2] Building C object CMakeFiles/cmTC_9f336.dir/HAVE_SYS_RESOURCE_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_9f336.dir/HAVE_SYS_RESOURCE_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_9f336.dir/HAVE_SYS_RESOURCE_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c:7:10: fatal error: sys/resource.h: No such file or directory
+    7 | #include <sys/resource.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/resource.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/uio.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_c799b && [1/2] Building C object CMakeFiles/cmTC_c799b.dir/HAVE_SYS_UIO_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_c799b.dir/HAVE_SYS_UIO_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_c799b.dir/HAVE_SYS_UIO_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c:9:10: fatal error: sys/uio.h: No such file or directory
+    9 | #include <sys/uio.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/un.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_7e290 && [1/2] Building C object CMakeFiles/cmTC_7e290.dir/HAVE_SYS_UN_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_7e290.dir/HAVE_SYS_UN_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_7e290.dir/HAVE_SYS_UN_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c:9:10: fatal error: sys/un.h: No such file or directory
+    9 | #include <sys/un.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/un.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;sys/xattr.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_79275 && [1/2] Building C object CMakeFiles/cmTC_79275.dir/HAVE_SYS_XATTR_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_79275.dir/HAVE_SYS_XATTR_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_79275.dir/HAVE_SYS_XATTR_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c:10:10: fatal error: sys/xattr.h: No such file or directory
+   10 | #include <sys/xattr.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <sys/xattr.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;arpa/tftp.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_f2255 && [1/2] Building C object CMakeFiles/cmTC_f2255.dir/HAVE_ARPA_TFTP_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_f2255.dir/HAVE_ARPA_TFTP_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_f2255.dir/HAVE_ARPA_TFTP_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c:10:10: fatal error: arpa/tftp.h: No such file or directory
+   10 | #include <arpa/tftp.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <arpa/tftp.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;crypto.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_779cd && [1/2] Building C object CMakeFiles/cmTC_779cd.dir/HAVE_CRYPTO_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_779cd.dir/HAVE_CRYPTO_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_779cd.dir/HAVE_CRYPTO_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_CRYPTO_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_CRYPTO_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_CRYPTO_H.c:11:10: fatal error: crypto.h: No such file or directory
+   11 | #include <crypto.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <crypto.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;des.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1765f && [1/2] Building C object CMakeFiles/cmTC_1765f.dir/HAVE_DES_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_1765f.dir/HAVE_DES_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_1765f.dir/HAVE_DES_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_DES_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_DES_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_DES_H.c:11:10: fatal error: des.h: No such file or directory
+   11 | #include <des.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <des.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;err.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_cb713 && [1/2] Building C object CMakeFiles/cmTC_cb713.dir/HAVE_ERR_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_cb713.dir/HAVE_ERR_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_cb713.dir/HAVE_ERR_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ERR_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ERR_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ERR_H.c:11:10: fatal error: err.h: No such file or directory
+   11 | #include <err.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <err.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;idn2.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_616b5 && [1/2] Building C object CMakeFiles/cmTC_616b5.dir/HAVE_IDN2_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_616b5.dir/HAVE_IDN2_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_616b5.dir/HAVE_IDN2_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:13:10: fatal error: idn2.h: No such file or directory
+   13 | #include <idn2.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;ifaddrs.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_083ad && [1/2] Building C object CMakeFiles/cmTC_083ad.dir/HAVE_IFADDRS_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_083ad.dir/HAVE_IFADDRS_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_083ad.dir/HAVE_IFADDRS_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c:13:10: fatal error: ifaddrs.h: No such file or directory
+   13 | #include <ifaddrs.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;krb.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_8b55e && [1/2] Building C object CMakeFiles/cmTC_8b55e.dir/HAVE_KRB_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_8b55e.dir/HAVE_KRB_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_8b55e.dir/HAVE_KRB_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:14:10: fatal error: krb.h: No such file or directory
+   14 | #include <krb.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;netinet/tcp.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a1d37 && [1/2] Building C object CMakeFiles/cmTC_a1d37.dir/HAVE_NETINET_TCP_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_a1d37.dir/HAVE_NETINET_TCP_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_a1d37.dir/HAVE_NETINET_TCP_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c:16:10: fatal error: netinet/tcp.h: No such file or directory
+   16 | #include <netinet/tcp.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <netinet/tcp.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;pem.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_6ba29 && [1/2] Building C object CMakeFiles/cmTC_6ba29.dir/HAVE_PEM_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_6ba29.dir/HAVE_PEM_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_6ba29.dir/HAVE_PEM_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:16:10: fatal error: pem.h: No such file or directory
+   16 | #include <pem.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;poll.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_935d0 && [1/2] Building C object CMakeFiles/cmTC_935d0.dir/HAVE_POLL_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_935d0.dir/HAVE_POLL_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_935d0.dir/HAVE_POLL_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c:16:10: fatal error: poll.h: No such file or directory
+   16 | #include <poll.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <poll.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;rsa.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a4705 && [1/2] Building C object CMakeFiles/cmTC_a4705.dir/HAVE_RSA_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_a4705.dir/HAVE_RSA_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_a4705.dir/HAVE_RSA_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_RSA_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_RSA_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_RSA_H.c:16:10: fatal error: rsa.h: No such file or directory
+   16 | #include <rsa.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <rsa.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_c799d && [1/2] Building C object CMakeFiles/cmTC_c799d.dir/HAVE_SSL_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_c799d.dir/HAVE_SSL_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_c799d.dir/HAVE_SSL_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:18:10: fatal error: ssl.h: No such file or directory
+   18 | #include <ssl.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;stropts.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_4fd31 && [1/2] Building C object CMakeFiles/cmTC_4fd31.dir/HAVE_STROPTS_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_4fd31.dir/HAVE_STROPTS_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_4fd31.dir/HAVE_STROPTS_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:22:10: fatal error: stropts.h: No such file or directory
+   22 | #include <stropts.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;time.h;process.h;stddef.h;malloc.h;memory.h;sys/utsname.h exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_559fa && [1/2] Building C object CMakeFiles/cmTC_559fa.dir/HAVE_SYS_UTSNAME_H.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_559fa.dir/HAVE_SYS_UTSNAME_H.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_559fa.dir/HAVE_SYS_UTSNAME_H.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c:27:10: fatal error: sys/utsname.h: No such file or directory
+   27 | #include <sys/utsname.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+#include <sys/utsname.h>
+
+
+int main(void){return 0;}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_068d0 && [1/2] Building C object CMakeFiles/cmTC_068d0.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_068d0.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_068d0.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'strncmpi' undeclared (first use in this function); did you mean 'strcmpi'?
+   32 |   return ((int*)(&strncmpi))[argc];
+      |                   ^~~~~~~~
+      |                   strcmpi
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the alarm exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_822e8 && [1/2] Building C object CMakeFiles/cmTC_822e8.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_822e8.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_822e8.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'alarm' undeclared (first use in this function)
+   32 |   return ((int*)(&alarm))[argc];
+      |                   ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alarm
+  return ((int*)(&alarm))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpwuid_r exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_625df && [1/2] Building C object CMakeFiles/cmTC_625df.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_625df.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_625df.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'getpwuid_r' undeclared (first use in this function); did you mean 'getpid'?
+   32 |   return ((int*)(&getpwuid_r))[argc];
+      |                   ^~~~~~~~~~
+      |                   getpid
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpwuid_r
+  return ((int*)(&getpwuid_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the usleep exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_b90ea && [1/2] Building C object CMakeFiles/cmTC_b90ea.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_b90ea.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_b90ea.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'usleep' undeclared (first use in this function); did you mean '_sleep'?
+   32 |   return ((int*)(&usleep))[argc];
+      |                   ^~~~~~
+      |                   _sleep
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef usleep
+  return ((int*)(&usleep))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror_r exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1a481 && [1/2] Building C object CMakeFiles/cmTC_1a481.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_1a481.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_1a481.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'strerror_r' undeclared (first use in this function); did you mean 'strerror_s'?
+   32 |   return ((int*)(&strerror_r))[argc];
+      |                   ^~~~~~~~~~
+      |                   strerror_s
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_r
+  return ((int*)(&strerror_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the siginterrupt exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_07243 && [1/2] Building C object CMakeFiles/cmTC_07243.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_07243.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_07243.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'siginterrupt' undeclared (first use in this function)
+   32 |   return ((int*)(&siginterrupt))[argc];
+      |                   ^~~~~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef siginterrupt
+  return ((int*)(&siginterrupt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fork exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_83421 && [1/2] Building C object CMakeFiles/cmTC_83421.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_83421.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_83421.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'fork' undeclared (first use in this function)
+   32 |   return ((int*)(&fork))[argc];
+      |                   ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fork
+  return ((int*)(&fork))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the freeifaddrs exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_58719 && [1/2] Building C object CMakeFiles/cmTC_58719.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_58719.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_58719.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'freeifaddrs' undeclared (first use in this function)
+   32 |   return ((int*)(&freeifaddrs))[argc];
+      |                   ^~~~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef freeifaddrs
+  return ((int*)(&freeifaddrs))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the pipe exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_80649 && [1/2] Building C object CMakeFiles/cmTC_80649.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_80649.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_80649.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'pipe' undeclared (first use in this function); did you mean '_pipe'?
+   32 |   return ((int*)(&pipe))[argc];
+      |                   ^~~~
+      |                   _pipe
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pipe
+  return ((int*)(&pipe))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ftruncate exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1ca12 && [1/2] Building C object CMakeFiles/cmTC_1ca12.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_1ca12.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_1ca12.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'ftruncate' undeclared (first use in this function); did you mean 'strncat'?
+   32 |   return ((int*)(&ftruncate))[argc];
+      |                   ^~~~~~~~~
+      |                   strncat
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ftruncate
+  return ((int*)(&ftruncate))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the if_nametoindex exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_6f511 && [1/2] Building C object CMakeFiles/cmTC_6f511.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_6f511.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_6f511.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'if_nametoindex' undeclared (first use in this function)
+   32 |   return ((int*)(&if_nametoindex))[argc];
+      |                   ^~~~~~~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef if_nametoindex
+  return ((int*)(&if_nametoindex))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrlimit exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a0e0f && [1/2] Building C object CMakeFiles/cmTC_a0e0f.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_a0e0f.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_a0e0f.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'getrlimit' undeclared (first use in this function)
+   32 |   return ((int*)(&getrlimit))[argc];
+      |                   ^~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrlimit
+  return ((int*)(&getrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setrlimit exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_3253f && [1/2] Building C object CMakeFiles/cmTC_3253f.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_3253f.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_3253f.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'setrlimit' undeclared (first use in this function)
+   32 |   return ((int*)(&setrlimit))[argc];
+      |                   ^~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setrlimit
+  return ((int*)(&setrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fcntl exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_3d7b8 && [1/2] Building C object CMakeFiles/cmTC_3d7b8.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_3d7b8.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_3d7b8.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'fcntl' undeclared (first use in this function)
+   32 |   return ((int*)(&fcntl))[argc];
+      |                   ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fcntl
+  return ((int*)(&fcntl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ioctl exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_7f519 && [1/2] Building C object CMakeFiles/cmTC_7f519.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_7f519.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_7f519.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'ioctl' undeclared (first use in this function)
+   32 |   return ((int*)(&ioctl))[argc];
+      |                   ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctl
+  return ((int*)(&ioctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_ff8a1 && [1/2] Building C object CMakeFiles/cmTC_ff8a1.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_ff8a1.exe
+[31mFAILED: [0mcmTC_ff8a1.exe 
+cmd.exe /C "cd . && "A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DCHECK_FUNCTION_EXISTS=mach_absolute_time  CMakeFiles/cmTC_ff8a1.dir/CheckFunctionExists.c.obj -o cmTC_ff8a1.exe -Wl,--out-implib,libcmTC_ff8a1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_ff8a1.dir/CheckFunctionExists.c.obj:CheckFunctionExists.c:(.text+0x15): undefined reference to `mach_absolute_time'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the fsetxattr exist failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_2a5b3 && [1/2] Building C object CMakeFiles/cmTC_2a5b3.dir/CheckSymbolExists.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_2a5b3.dir/CheckSymbolExists.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_2a5b3.dir/CheckSymbolExists.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: error: 'fsetxattr' undeclared (first use in this function)
+   32 |   return ((int*)(&fsetxattr))[argc];
+      |                   ^~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+   28 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fsetxattr
+  return ((int*)(&fsetxattr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing Curl Test HAVE_FCNTL_O_NONBLOCK failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_822b2 && [1/2] Building C object CMakeFiles/cmTC_822b2.dir/CurlTests.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_822b2.dir/CurlTests.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_FCNTL_O_NONBLOCK  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_822b2.dir/CurlTests.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:64:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   64 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:15: warning: implicit declaration of function 'fcntl' [-Wimplicit-function-declaration]
+   68 |       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+      |               ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:15: warning: nested extern declaration of 'fcntl' [-Wnested-externs]
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:24: error: 'F_SETFL' undeclared (first use in this function)
+   68 |       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+      |                        ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:24: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:68:41: error: 'O_NONBLOCK' undeclared (first use in this function)
+   68 |       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+      |                                         ^~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1aa94 && [1/2] Building C object CMakeFiles/cmTC_1aa94.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:350:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  350 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:354:13: warning: implicit declaration of function 'IoctlSocket'; did you mean 'ioctlsocket'? [-Wimplicit-function-declaration]
+  354 |     if(0 != IoctlSocket(0, 0, 0))
+      |             ^~~~~~~~~~~
+      |             ioctlsocket
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:354:13: warning: nested extern declaration of 'IoctlSocket' [-Wnested-externs]
+[2/2] Linking C executable cmTC_1aa94.exe
+[31mFAILED: [0mcmTC_1aa94.exe 
+cmd.exe /C "cd . && "A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_1aa94.dir/CurlTests.c.obj -o cmTC_1aa94.exe -Wl,--out-implib,libcmTC_1aa94.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_1aa94.dir/CurlTests.c.obj:CurlTests.c:(.text+0x1e): undefined reference to `IoctlSocket'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTL_FIONBIO failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_b9e49 && [1/2] Building C object CMakeFiles/cmTC_b9e49.dir/CurlTests.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_b9e49.dir/CurlTests.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTL_FIONBIO  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_b9e49.dir/CurlTests.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:436:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  436 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:440:17: warning: implicit declaration of function 'ioctl' [-Wimplicit-function-declaration]
+  440 |         if(0 != ioctl(0, FIONBIO, &flags))
+      |                 ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:440:17: warning: nested extern declaration of 'ioctl' [-Wnested-externs]
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:440:26: error: 'FIONBIO' undeclared (first use in this function)
+  440 |         if(0 != ioctl(0, FIONBIO, &flags))
+      |                          ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:440:26: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTL_SIOCGIFADDR failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_45fb9 && [1/2] Building C object CMakeFiles/cmTC_45fb9.dir/CurlTests.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_45fb9.dir/CurlTests.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTL_SIOCGIFADDR  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_45fb9.dir/CurlTests.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:465:10: fatal error: net/if.h: No such file or directory
+  465 | #include <net/if.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_b3b70 && [1/2] Building C object CMakeFiles/cmTC_b3b70.dir/CurlTests.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_b3b70.dir/CurlTests.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_b3b70.dir/CurlTests.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:503:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  503 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:505:43: error: 'SO_NONBLOCK' undeclared (first use in this function)
+  505 |         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+      |                                           ^~~~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:505:43: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_7f00f && [1/2] Building C object CMakeFiles/cmTC_7f00f.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:619: warning: ISO C forbids an empty translation unit [-Wpedantic]
+[2/2] Linking C executable cmTC_7f00f.exe
+[31mFAILED: [0mcmTC_7f00f.exe 
+cmd.exe /C "cd . && "A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_7f00f.dir/CurlTests.c.obj -o cmTC_7f00f.exe -Wl,--out-implib,libcmTC_7f00f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_84241 && [1/2] Building C object CMakeFiles/cmTC_84241.dir/CurlTests.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_84241.dir/CurlTests.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_GLIBC_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_84241.dir/CurlTests.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:515:6: warning: no previous prototype for 'check' [-Wmissing-prototypes]
+  515 | void check(char c) {}
+      |      ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'check':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:515:17: warning: unused parameter 'c' [-Wunused-parameter]
+  515 | void check(char c) {}
+      |            ~~~~~^
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: At top level:
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:518:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  518 | main () {
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:521:9: warning: implicit declaration of function 'strerror_r'; did you mean 'strerror_s'? [-Wimplicit-function-declaration]
+  521 |   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+      |         ^~~~~~~~~~
+      |         strerror_s
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:521:9: warning: nested extern declaration of 'strerror_r' [-Wnested-externs]
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:521:51: error: subscripted value is neither array nor pointer nor vector
+  521 |   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+      |                                                   ^
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_POSIX_STRERROR_R failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_6fabb && [1/2] Building C object CMakeFiles/cmTC_6fabb.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:530:6: warning: no previous prototype for 'check' [-Wmissing-prototypes]
+  530 | void check(float f) {}
+      |      ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'check':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:530:18: warning: unused parameter 'f' [-Wunused-parameter]
+  530 | void check(float f) {}
+      |            ~~~~~~^
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: At top level:
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:533:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  533 | main () {
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:536:9: warning: implicit declaration of function 'strerror_r'; did you mean 'strerror_s'? [-Wimplicit-function-declaration]
+  536 |   check(strerror_r(EACCES, buffer, sizeof(buffer)));
+      |         ^~~~~~~~~~
+      |         strerror_s
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:536:9: warning: nested extern declaration of 'strerror_r' [-Wnested-externs]
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:536:9: warning: conversion from 'int' to 'float' may change value [-Wconversion]
+  536 |   check(strerror_r(EACCES, buffer, sizeof(buffer)));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2/2] Linking C executable cmTC_6fabb.exe
+[31mFAILED: [0mcmTC_6fabb.exe 
+cmd.exe /C "cd . && "A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_POSIX_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H  CMakeFiles/cmTC_6fabb.dir/CurlTests.c.obj -o cmTC_6fabb.exe -Wl,--out-implib,libcmTC_6fabb.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_6fabb.dir/CurlTests.c.obj:CurlTests.c:(.text+0x34): undefined reference to `strerror_r'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_49a36 && [1/2] Building C object CMakeFiles/cmTC_49a36.dir/CurlTests.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_49a36.dir/CurlTests.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe"   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_BUILTIN_AVAILABLE  -DHAVE_WINDOWS_H -DHAVE_WINSOCK_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles/cmTC_49a36.dir/CurlTests.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:567:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  567 | main() {
+      | ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:568:6: warning: implicit declaration of function '__builtin_available'; did you mean '__builtin_scalbl'? [-Wimplicit-function-declaration]
+  568 |   if(__builtin_available(macOS 10.12, *)) {}
+      |      ^~~~~~~~~~~~~~~~~~~
+      |      __builtin_scalbl
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:568:6: warning: nested extern declaration of '__builtin_available' [-Wnested-externs]
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:568:26: error: 'macOS' undeclared (first use in this function)
+  568 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                          ^~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:568:26: note: each undeclared identifier is reported only once for each function it appears in
+A:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:568:31: error: expected ')' before numeric constant
+  568 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                         ~     ^~~~~~
+      |                               )
+ninja: build stopped: subcommand failed.
+
+
+Performing C SOURCE FILE Test HAVE_MSG_NOSIGNAL failed with the following output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_54237 && [1/2] Building C object CMakeFiles/cmTC_54237.dir/src.c.obj
+[31mFAILED: [0mCMakeFiles/cmTC_54237.dir/src.c.obj 
+"A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -DHAVE_MSG_NOSIGNAL -IA:/Programming/Projects--c---/Tests/cmake-build-debug/_deps/curl-src/include -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format     -D_WINSOCKAPI_= -o CMakeFiles/cmTC_54237.dir/src.c.obj -c A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+In file included from A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:16: error: 'MSG_NOSIGNAL' undeclared (first use in this function)
+    9 |     int flag = MSG_NOSIGNAL;
+      |                ^~~~~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:16: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#undef inline
+#include <winsock2.h>
+#include <windows.h>
+#include <winsock.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+  int main(void) {
+    int flag = MSG_NOSIGNAL;
+    (void)flag;
+    return 0;
+  }
+Performing C SOURCE FILE Test HAVE_POLL_FINE failed with the following compile output:
+Change Dir: A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_c79ba && [1/2] Building C object CMakeFiles/cmTC_c79ba.dir/src.c.obj
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:7:12: warning: "HAVE_POLL_H" is not defined, evaluates to 0 [-Wundef]
+    7 |     #elif  HAVE_POLL_H
+      |            ^~~~~~~~~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:13:17: warning: implicit declaration of function 'poll' [-Wimplicit-function-declaration]
+   13 |         if(0 != poll(0, 0, 10)) {
+      |                 ^~~~
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:13:17: warning: nested extern declaration of 'poll' [-Wnested-externs]
+A:/Programming/Projects--c---/Tests/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:19:15: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   19 |           int rc;
+      |               ^~
+[2/2] Linking C executable cmTC_c79ba.exe
+[31mFAILED: [0mcmTC_c79ba.exe 
+cmd.exe /C "cd . && "A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe" -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wno-long-long -Wfloat-equal -Wno-multichar -Wsign-compare -Wundef -Wno-format-nonliteral -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wno-sign-conversion -Wvla -Wdouble-promotion -Wno-system-headers -Wno-pedantic-ms-format  CMakeFiles/cmTC_c79ba.dir/src.c.obj -o cmTC_c79ba.exe -Wl,--out-implib,libcmTC_c79ba.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_c79ba.dir/src.c.obj:src.c:(.text+0x1e): undefined reference to `poll'
+A:\Programs\CLion\CLion 2021.3\bin\mingw\bin/ld.exe: CMakeFiles/cmTC_c79ba.dir/src.c.obj:src.c:(.text+0x4f): undefined reference to `poll'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+    #include <stdlib.h>
+    #include <sys/time.h>
+
+    #ifdef HAVE_SYS_POLL_H
+    #  include <sys/poll.h>
+    #elif  HAVE_POLL_H
+    #  include <poll.h>
+    #endif
+
+    int main(void)
+    {
+        if(0 != poll(0, 0, 10)) {
+          return 1; /* fail */
+        }
+        else {
+          /* detect the 10.12 poll() breakage */
+          struct timeval before, after;
+          int rc;
+          size_t us;
+
+          gettimeofday(&before, NULL);
+          rc = poll(NULL, 0, 500);
+          gettimeofday(&after, NULL);
+
+          us = (after.tv_sec - before.tv_sec) * 1000000 +
+            (after.tv_usec - before.tv_usec);
+
+          if(us < 400000) {
+            return 1;
+          }
+        }
+        return 0;
+    }

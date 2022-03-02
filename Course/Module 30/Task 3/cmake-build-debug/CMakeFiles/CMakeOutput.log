@@ -1,0 +1,1846 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_facf9 && [1/2] Building C object CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_facf9.dir/'
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT A:/Programs/CLion/CLion 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_facf9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\Users\god19\AppData\Local\Temp\cc1XdaH5.s
+GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"
+ignoring nonexistent directory "/win/include"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../include"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include
+End of search list.
+GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 23424b72d090e8b977a96775bde79257
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_facf9.dir/'
+ as -v -o CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj C:\Users\god19\AppData\Local\Temp\cc1XdaH5.s
+GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
+COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/
+LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_facf9.exe
+Using built-in specs.
+COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe
+COLLECT_LTO_WRAPPER=A:/Programs/CLion/CLion\ 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/
+LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_facf9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_facf9.'
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_facf9.exe A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_facf9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_facf9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_facf9.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+  end of search list found
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/include]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include]
+  implicit include dirs: [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include;A:/Programs/CLion/CLion 2021.3/bin/mingw/include;A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_facf9 && [1/2] Building C object CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_facf9.dir/']
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT A:/Programs/CLion/CLion 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_facf9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\Users\god19\AppData\Local\Temp\cc1XdaH5.s]
+  ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/win/include"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 23424b72d090e8b977a96775bde79257]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_facf9.dir/']
+  ignore line: [ as -v -o CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj C:\Users\god19\AppData\Local\Temp\cc1XdaH5.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
+  ignore line: [COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_facf9.exe]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=A:/Programs/CLion/CLion\ 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_facf9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_facf9.']
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_facf9.exe A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_facf9.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_facf9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_facf9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_facf9.']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_fffa2 && [1/2] Building CXX object CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj
+Using built-in specs.
+COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\g++.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fffa2.dir/'
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT A:/Programs/CLion/CLion 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_fffa2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\Users\god19\AppData\Local\Temp\ccsdG4Jp.s
+GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"
+ignoring nonexistent directory "/win/include"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../include"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"
+ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include
+End of search list.
+GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 916242a6eadede3a42d72bc0142b939f
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fffa2.dir/'
+ as -v -o CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\god19\AppData\Local\Temp\ccsdG4Jp.s
+GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
+COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/
+LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_fffa2.exe
+Using built-in specs.
+COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\g++.exe
+COLLECT_LTO_WRAPPER=A:/Programs/CLion/CLion\ 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/
+LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fffa2.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fffa2.'
+ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_fffa2.exe A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_fffa2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fffa2.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fffa2.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+    add: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+  end of search list found
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/include]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+  collapse include dir [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include] ==> [A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include]
+  implicit include dirs: [A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++;A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32;A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward;A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include;A:/Programs/CLion/CLion 2021.3/bin/mingw/include;A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_fffa2 && [1/2] Building CXX object CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\g++.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fffa2.dir/']
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT A:/Programs/CLion/CLion 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_fffa2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\Users\god19\AppData\Local\Temp\ccsdG4Jp.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/win/include"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "A:/Programs/CLion/CLion 2021.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 916242a6eadede3a42d72bc0142b939f]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fffa2.dir/']
+  ignore line: [ as -v -o CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\god19\AppData\Local\Temp\ccsdG4Jp.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
+  ignore line: [COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_fffa2.exe]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=A:\Programs\CLion\CLion 2021.3\bin\mingw\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=A:/Programs/CLion/CLion\ 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fffa2.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fffa2.']
+  ignore line: [ A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_fffa2.exe A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LA:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_fffa2.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_fffa2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fffa2.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fffa2.']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test OPT_pedantic succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_81930 && [1/2] Building C object CMakeFiles/cmTC_81930.dir/src.c.obj
+[2/2] Linking C executable cmTC_81930.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wall succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_36034 && [1/2] Building C object CMakeFiles/cmTC_36034.dir/src.c.obj
+[2/2] Linking C executable cmTC_36034.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_W succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0b24b && [1/2] Building C object CMakeFiles/cmTC_0b24b.dir/src.c.obj
+[2/2] Linking C executable cmTC_0b24b.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wpointer_arith succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a5188 && [1/2] Building C object CMakeFiles/cmTC_a5188.dir/src.c.obj
+[2/2] Linking C executable cmTC_a5188.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wwrite_strings succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_b4759 && [1/2] Building C object CMakeFiles/cmTC_b4759.dir/src.c.obj
+[2/2] Linking C executable cmTC_b4759.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wunused succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0f99f && [1/2] Building C object CMakeFiles/cmTC_0f99f.dir/src.c.obj
+[2/2] Linking C executable cmTC_0f99f.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wshadow succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_da4d8 && [1/2] Building C object CMakeFiles/cmTC_da4d8.dir/src.c.obj
+[2/2] Linking C executable cmTC_da4d8.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Winline succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_8443c && [1/2] Building C object CMakeFiles/cmTC_8443c.dir/src.c.obj
+[2/2] Linking C executable cmTC_8443c.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wnested_externs succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_2a2d0 && [1/2] Building C object CMakeFiles/cmTC_2a2d0.dir/src.c.obj
+[2/2] Linking C executable cmTC_2a2d0.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wmissing_declarations succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_4442f && [1/2] Building C object CMakeFiles/cmTC_4442f.dir/src.c.obj
+[2/2] Linking C executable cmTC_4442f.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wmissing_prototypes succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_ead3f && [1/2] Building C object CMakeFiles/cmTC_ead3f.dir/src.c.obj
+[2/2] Linking C executable cmTC_ead3f.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wno_long_long succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_11af7 && [1/2] Building C object CMakeFiles/cmTC_11af7.dir/src.c.obj
+[2/2] Linking C executable cmTC_11af7.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wfloat_equal succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_d61d8 && [1/2] Building C object CMakeFiles/cmTC_d61d8.dir/src.c.obj
+[2/2] Linking C executable cmTC_d61d8.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wno_multichar succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_4bda0 && [1/2] Building C object CMakeFiles/cmTC_4bda0.dir/src.c.obj
+[2/2] Linking C executable cmTC_4bda0.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wsign_compare succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_2298c && [1/2] Building C object CMakeFiles/cmTC_2298c.dir/src.c.obj
+[2/2] Linking C executable cmTC_2298c.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wundef succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_eb89a && [1/2] Building C object CMakeFiles/cmTC_eb89a.dir/src.c.obj
+[2/2] Linking C executable cmTC_eb89a.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wno_format_nonliteral succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1c947 && [1/2] Building C object CMakeFiles/cmTC_1c947.dir/src.c.obj
+[2/2] Linking C executable cmTC_1c947.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wendif_labels succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_9e659 && [1/2] Building C object CMakeFiles/cmTC_9e659.dir/src.c.obj
+[2/2] Linking C executable cmTC_9e659.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wstrict_prototypes succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_56eba && [1/2] Building C object CMakeFiles/cmTC_56eba.dir/src.c.obj
+[2/2] Linking C executable cmTC_56eba.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wdeclaration_after_statement succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_94819 && [1/2] Building C object CMakeFiles/cmTC_94819.dir/src.c.obj
+[2/2] Linking C executable cmTC_94819.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wstrict_aliasing_3 succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1cf87 && [1/2] Building C object CMakeFiles/cmTC_1cf87.dir/src.c.obj
+[2/2] Linking C executable cmTC_1cf87.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wcast_align succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_3e17b && [1/2] Building C object CMakeFiles/cmTC_3e17b.dir/src.c.obj
+[2/2] Linking C executable cmTC_3e17b.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wtype_limits succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_7e63a && [1/2] Building C object CMakeFiles/cmTC_7e63a.dir/src.c.obj
+[2/2] Linking C executable cmTC_7e63a.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wold_style_declaration succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_abf0f && [1/2] Building C object CMakeFiles/cmTC_abf0f.dir/src.c.obj
+[2/2] Linking C executable cmTC_abf0f.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wmissing_parameter_type succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_ffc23 && [1/2] Building C object CMakeFiles/cmTC_ffc23.dir/src.c.obj
+[2/2] Linking C executable cmTC_ffc23.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wempty_body succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_be227 && [1/2] Building C object CMakeFiles/cmTC_be227.dir/src.c.obj
+[2/2] Linking C executable cmTC_be227.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wclobbered succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_69a36 && [1/2] Building C object CMakeFiles/cmTC_69a36.dir/src.c.obj
+[2/2] Linking C executable cmTC_69a36.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wignored_qualifiers succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0e362 && [1/2] Building C object CMakeFiles/cmTC_0e362.dir/src.c.obj
+[2/2] Linking C executable cmTC_0e362.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wconversion succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_859d1 && [1/2] Building C object CMakeFiles/cmTC_859d1.dir/src.c.obj
+[2/2] Linking C executable cmTC_859d1.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wno_sign_conversion succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_95d8f && [1/2] Building C object CMakeFiles/cmTC_95d8f.dir/src.c.obj
+[2/2] Linking C executable cmTC_95d8f.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wvla succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_d62bb && [1/2] Building C object CMakeFiles/cmTC_d62bb.dir/src.c.obj
+[2/2] Linking C executable cmTC_d62bb.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wdouble_promotion succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_75e15 && [1/2] Building C object CMakeFiles/cmTC_75e15.dir/src.c.obj
+[2/2] Linking C executable cmTC_75e15.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wno_system_headers succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_953ff && [1/2] Building C object CMakeFiles/cmTC_953ff.dir/src.c.obj
+[2/2] Linking C executable cmTC_953ff.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test OPT_Wno_pedantic_ms_format succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0aa0e && [1/2] Building C object CMakeFiles/cmTC_0aa0e.dir/src.c.obj
+[2/2] Linking C executable cmTC_0aa0e.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_f47b9 && [1/2] Building C object CMakeFiles/cmTC_f47b9.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_f47b9.exe
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_f9d9b && [1/2] Building C object CMakeFiles/cmTC_f9d9b.dir/src.c.obj
+[2/2] Linking C executable cmTC_f9d9b.exe
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function getch exists in the ws2_32; passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1f369 && [1/2] Building C object CMakeFiles/cmTC_1f369.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_1f369.exe
+
+
+
+Determining if the function getch exists in the winmm;ws2_32 passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_15d11 && [1/2] Building C object CMakeFiles/cmTC_15d11.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_15d11.exe
+
+
+
+Determining if files ;windows.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_ec3fa && [1/2] Building C object CMakeFiles/cmTC_ec3fa.dir/HAVE_WINDOWS_H.c.obj
+[2/2] Linking C executable cmTC_ec3fa.exe
+
+
+
+Determining if files windows.h;winsock.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_1f06d && [1/2] Building C object CMakeFiles/cmTC_1f06d.dir/HAVE_WINSOCK_H.c.obj
+[2/2] Linking C executable cmTC_1f06d.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_d08fd && [1/2] Building C object CMakeFiles/cmTC_d08fd.dir/HAVE_WS2TCPIP_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_WS2TCPIP_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_d08fd.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_7a0f1 && [1/2] Building C object CMakeFiles/cmTC_7a0f1.dir/HAVE_WINSOCK2_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_WINSOCK2_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_7a0f1.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_edb6e && [1/2] Building C object CMakeFiles/cmTC_edb6e.dir/HAVE_STDIO_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STDIO_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_edb6e.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_22842 && [1/2] Building C object CMakeFiles/cmTC_22842.dir/HAVE_ASSERT_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ASSERT_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_22842.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_bf1a7 && [1/2] Building C object CMakeFiles/cmTC_bf1a7.dir/HAVE_ERRNO_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_ERRNO_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_bf1a7.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_62da1 && [1/2] Building C object CMakeFiles/cmTC_62da1.dir/HAVE_LIBGEN_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_LIBGEN_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_62da1.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_d3e55 && [1/2] Building C object CMakeFiles/cmTC_d3e55.dir/HAVE_LOCALE_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_LOCALE_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_d3e55.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_17750 && [1/2] Building C object CMakeFiles/cmTC_17750.dir/HAVE_STDBOOL_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STDBOOL_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_17750.exe
+
+
+
+Determining if files windows.h;winsock.h;ws2tcpip.h;winsock2.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;time.h;process.h;stddef.h exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_34733 && [1/2] Building C object CMakeFiles/cmTC_34733.dir/HAVE_STDDEF_H.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STDDEF_H.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_34733.exe
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_22ceb && [1/2] Building C object CMakeFiles/cmTC_22ceb.dir/SIZEOF_SIZE_T.c.obj
+[2/2] Linking C executable cmTC_22ceb.exe
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_c30ff && [1/2] Building C object CMakeFiles/cmTC_c30ff.dir/SIZEOF_SSIZE_T.c.obj
+[2/2] Linking C executable cmTC_c30ff.exe
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_8b41c && [1/2] Building C object CMakeFiles/cmTC_8b41c.dir/SIZEOF_LONG_LONG.c.obj
+[2/2] Linking C executable cmTC_8b41c.exe
+
+
+
+Determining size of long passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_3f386 && [1/2] Building C object CMakeFiles/cmTC_3f386.dir/SIZEOF_LONG.c.obj
+[2/2] Linking C executable cmTC_3f386.exe
+
+
+
+Determining size of short passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_5e183 && [1/2] Building C object CMakeFiles/cmTC_5e183.dir/SIZEOF_SHORT.c.obj
+[2/2] Linking C executable cmTC_5e183.exe
+
+
+
+Determining size of int passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_cd2eb && [1/2] Building C object CMakeFiles/cmTC_cd2eb.dir/SIZEOF_INT.c.obj
+[2/2] Linking C executable cmTC_cd2eb.exe
+
+
+
+Determining size of __int64 passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_dd36f && [1/2] Building C object CMakeFiles/cmTC_dd36f.dir/SIZEOF___INT64.c.obj
+[2/2] Linking C executable cmTC_dd36f.exe
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_4cecc && [1/2] Building C object CMakeFiles/cmTC_4cecc.dir/SIZEOF_TIME_T.c.obj
+[2/2] Linking C executable cmTC_4cecc.exe
+
+
+
+Determining if the basename exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_af86a && [1/2] Building C object CMakeFiles/cmTC_af86a.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&basename))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_af86a.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef basename
+  return ((int*)(&basename))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the gethostbyname exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a2b37 && [1/2] Building C object CMakeFiles/cmTC_a2b37.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&gethostbyname))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_a2b37.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostbyname
+  return ((int*)(&gethostbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_ea235 && [1/2] Building C object CMakeFiles/cmTC_ea235.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&strtoll))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_ea235.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strtoi64 exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a278d && [1/2] Building C object CMakeFiles/cmTC_a278d.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&_strtoi64))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_a278d.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtoi64
+  return ((int*)(&_strtoi64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the freeaddrinfo exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_97942 && [1/2] Building C object CMakeFiles/cmTC_97942.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&freeaddrinfo))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_97942.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef freeaddrinfo
+  return ((int*)(&freeaddrinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getprotobyname exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_f15d9 && [1/2] Building C object CMakeFiles/cmTC_f15d9.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&getprotobyname))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_f15d9.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getprotobyname
+  return ((int*)(&getprotobyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpeername exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0430e && [1/2] Building C object CMakeFiles/cmTC_0430e.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&getpeername))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_0430e.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpeername
+  return ((int*)(&getpeername))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getsockname exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_d605f && [1/2] Building C object CMakeFiles/cmTC_d605f.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&getsockname))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_d605f.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getsockname
+  return ((int*)(&getsockname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setlocale exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_ff846 && [1/2] Building C object CMakeFiles/cmTC_ff846.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&setlocale))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_ff846.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setlocale
+  return ((int*)(&setlocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setmode exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_5f32a && [1/2] Building C object CMakeFiles/cmTC_5f32a.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&setmode))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_5f32a.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setmode
+  return ((int*)(&setmode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setsockopt exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_6599a && [1/2] Building C object CMakeFiles/cmTC_6599a.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&setsockopt))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_6599a.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setsockopt
+  return ((int*)(&setsockopt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the inet_pton exist passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0f83b && [1/2] Building C object CMakeFiles/cmTC_0f83b.dir/CheckSymbolExists.c.obj
+In file included from A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:32:11: warning: ISO C forbids conversion of function pointer to object pointer type [-Wpedantic]
+   32 |   return ((int*)(&inet_pton))[argc];
+      |           ^
+[2/2] Linking C executable cmTC_0f83b.exe
+
+
+File A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <winsock.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_pton
+  return ((int*)(&inet_pton))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing Curl Test HAVE_IOCTLSOCKET passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_4336f && [1/2] Building C object CMakeFiles/cmTC_4336f.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:321:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  321 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:326:24: warning: 'socket' is used uninitialized [-Wuninitialized]
+  326 |  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2/2] Linking C executable cmTC_4336f.exe
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_0881f && [1/2] Building C object CMakeFiles/cmTC_0881f.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:377:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  377 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:382:41: warning: pointer targets in passing argument 3 of 'ioctlsocket' differ in signedness [-Wpointer-sign]
+  382 |         if(0 != ioctlsocket(0, FIONBIO, &flags))
+      |                                         ^~~~~~
+      |                                         |
+      |                                         long int *
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:368:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:1007:76: note: expected 'u_long *' {aka 'long unsigned int *'} but argument is of type 'long int *'
+ 1007 |   WINSOCK_API_LINKAGE int WSAAPI ioctlsocket(SOCKET s,__LONG32 cmd,u_long *argp);
+      |                                                                    ~~~~~~~~^~~~
+[2/2] Linking C executable cmTC_0881f.exe
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_92f0f && [1/2] Building C object CMakeFiles/cmTC_92f0f.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:405:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  405 | main ()
+      | ^~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c: In function 'main':
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:409:41: warning: passing argument 3 of 'ioctlsocket' from incompatible pointer type [-Wincompatible-pointer-types]
+  409 |         if(0 != ioctlsocket(0, FIONBIO, &flags))
+      |                                         ^~~~~~
+      |                                         |
+      |                                         int *
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:396:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:1007:76: note: expected 'u_long *' {aka 'long unsigned int *'} but argument is of type 'int *'
+ 1007 |   WINSOCK_API_LINKAGE int WSAAPI ioctlsocket(SOCKET s,__LONG32 cmd,u_long *argp);
+      |                                                                    ~~~~~~~~^~~~
+[2/2] Linking C executable cmTC_92f0f.exe
+
+
+Performing Curl Test HAVE_BOOL_T passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_6df2c && [1/2] Building C object CMakeFiles/cmTC_6df2c.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:201:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  201 | main ()
+      | ^~~~
+[2/2] Linking C executable cmTC_6df2c.exe
+
+
+Performing Curl Test HAVE_FILE_OFFSET_BITS passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a4203 && [1/2] Building C object CMakeFiles/cmTC_a4203.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:302:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  302 | int main () { ; return 0; }
+      |     ^~~~
+[2/2] Linking C executable cmTC_a4203.exe
+
+
+Performing Curl Test HAVE_VARIADIC_MACROS_C99 passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_8dcb0 && [1/2] Building C object CMakeFiles/cmTC_8dcb0.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:587:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  587 | main() {
+      | ^~~~
+[2/2] Linking C executable cmTC_8dcb0.exe
+
+
+Performing Curl Test HAVE_VARIADIC_MACROS_GCC passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_fccc3 && [1/2] Building C object CMakeFiles/cmTC_fccc3.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:596:32: warning: ISO C does not permit named variadic macros [-Wvariadic-macros]
+  596 | #define gcc_vmacro3(first, args...) fun3(first, args)
+      |                                ^~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:597:32: warning: ISO C does not permit named variadic macros [-Wvariadic-macros]
+  597 | #define gcc_vmacro2(first, args...) fun2(first, args)
+      |                                ^~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:610:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  610 | main() {
+      | ^~~~
+[2/2] Linking C executable cmTC_fccc3.exe
+
+
+Determining size of off_t passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_67205 && [1/2] Building C object CMakeFiles/cmTC_67205.dir/SIZEOF_OFF_T.c.obj
+[2/2] Linking C executable cmTC_67205.exe
+
+
+
+Determining size of curl_off_t passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_4c1ed && [1/2] Building C object CMakeFiles/cmTC_4c1ed.dir/SIZEOF_CURL_OFF_T.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/include/curl/system.h:422,
+                 from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_CURL_OFF_T.c:3:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C executable cmTC_4c1ed.exe
+
+
+
+Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_70d53 && [1/2] Building C object CMakeFiles/cmTC_70d53.dir/CurlTests.c.obj
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:559:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+  559 | main() {
+      | ^~~~
+[2/2] Linking C executable cmTC_70d53.exe
+
+
+Performing C SOURCE FILE Test curl_cv_recv succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a5d66 && [1/2] Building C object CMakeFiles/cmTC_a5d66.dir/src.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C static library libcmTC_a5d66.a
+
+
+Source file was:
+#undef inline
+#include <winsock2.h>
+#include <windows.h>
+#include <winsock.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+int main(void) {
+    recv(0, 0, 0, 0);
+    return 0;
+}
+Performing C SOURCE FILE Test curl_cv_func_recv_test succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_528f8 && [1/2] Building C object CMakeFiles/cmTC_528f8.dir/src.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:10:19: warning: 'recv' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   10 |                   recv(SOCKET, char *, int, int);
+      |                   ^~~~
+[2/2] Linking C static library libcmTC_528f8.a
+
+
+Source file was:
+
+                  #undef inline
+#include <winsock2.h>
+#include <windows.h>
+#include <winsock.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+                  extern int PASCAL
+                  recv(SOCKET, char *, int, int);
+                  int main(void) {
+                    SOCKET s=0;
+                    char * buf=0;
+                    int len=0;
+                    int flags=0;
+                    int res = recv(s, buf, len, flags);
+                    (void) res;
+                    return 0;
+                  }
+Performing C SOURCE FILE Test curl_cv_send succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_a3cef && [1/2] Building C object CMakeFiles/cmTC_a3cef.dir/src.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C static library libcmTC_a3cef.a
+
+
+Source file was:
+#undef inline
+#include <winsock2.h>
+#include <windows.h>
+#include <winsock.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+int main(void) {
+    send(0, 0, 0, 0);
+    return 0;
+}
+Performing C SOURCE FILE Test curl_cv_func_send_test succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_7f9b5 && [1/2] Building C object CMakeFiles/cmTC_7f9b5.dir/src.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:10:19: warning: 'send' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   10 |                   send(SOCKET, const char *, int, int);
+      |                   ^~~~
+[2/2] Linking C static library libcmTC_7f9b5.a
+
+
+Source file was:
+
+                  #undef inline
+#include <winsock2.h>
+#include <windows.h>
+#include <winsock.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+                  extern int PASCAL
+                  send(SOCKET, const char *, int, int);
+                  int main(void) {
+                    SOCKET s=0;
+                    const char * buf=0;
+                    int len=0;
+                    int flags=0;
+                    int res = send(s, buf, len, flags);
+                    (void) res;
+                    return 0;
+                  }
+Performing C SOURCE FILE Test HAVE_STRUCT_TIMEVAL succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_50716 && [1/2] Building C object CMakeFiles/cmTC_50716.dir/src.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C static library libcmTC_50716.a
+
+
+Source file was:
+#undef inline
+#include <winsock2.h>
+#include <windows.h>
+#include <winsock.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+int main(void) {
+  struct timeval ts;
+  ts.tv_sec  = 0;
+  ts.tv_usec = 0;
+  (void)ts;
+  return 0;
+}
+Determining size of sig_atomic_t passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_73479 && [1/2] Building C object CMakeFiles/cmTC_73479.dir/SIZEOF_SIG_ATOMIC_T.c.obj
+[2/2] Linking C static library libcmTC_73479.a
+
+
+
+Performing C SOURCE FILE Test HAVE_SIG_ATOMIC_T_NOT_VOLATILE succeeded with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_b3d9d && [1/2] Building C object CMakeFiles/cmTC_b3d9d.dir/src.c.obj
+[2/2] Linking C static library libcmTC_b3d9d.a
+
+
+Source file was:
+
+    #ifdef HAVE_SIGNAL_H
+    #  include <signal.h>
+    #endif
+    int main(void) {
+      static volatile sig_atomic_t dummy = 0;
+      (void)dummy;
+      return 0;
+    }
+Determining size of struct sockaddr_storage passed with the following output:
+Change Dir: A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe cmTC_d9ecf && [1/2] Building C object CMakeFiles/cmTC_d9ecf.dir/SIZEOF_STRUCT_SOCKADDR_STORAGE.c.obj
+In file included from A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_STRUCT_SOCKADDR_STORAGE.c:3:
+A:/Programs/CLion/CLion 2021.3/bin/mingw/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/2] Linking C static library libcmTC_d9ecf.a
+
+
+

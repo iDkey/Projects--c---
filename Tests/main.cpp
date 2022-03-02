@@ -1,28 +1,18 @@
 #include <iostream>
-using std::cout;
-using std::endl;
-
-class Base {
-public:
-    void foo() const {cout << "Base::foo" << endl;}
-    virtual void bar() const {cout << "Base::bar" << endl;}
-};
-
-class Derived: public Base{
-public:
-    void foo() const {cout << "Derived::food" << endl;}
-    virtual void bar() const {cout << "Derived::bar" << endl;}
-};
+#include <string>
+#include <vector>
+#include <cpr/cpr.h>
 
 int main()
 {
-    Base b;
-    Derived d;
-    Base* pb = &d;
-    b.foo();  // Печатает Base::foo
-    b.bar();  // Печатает Base::bar
-    d.foo();  // Печатает Derived::foo
-    d.bar();  // Печатает Derived::bar
-    pb->foo();    // Печатает Base::foo, хотя pb указывает на объект Derived, потому что pb имеет тип Base*
-    pb->bar();    // Печатает Derived::bar, потому что функция виртуальная и вызывается через сам объект, который знает свой настоящий тип
+    cpr::Url url{"http://httpbin.org/post"};
+    std::vector<cpr::Pair> payloadData;
+    std::string a = "x";
+    std::string b = "1";
+    std::string c = "y";
+    std::string d = "2";
+    payloadData.emplace_back(a.c_str(), b.c_str());
+    payloadData.emplace_back(c.c_str(), d.c_str());
+    cpr::Response response = cpr::Post(url, cpr::Payload(payloadData.begin(), payloadData.end()));
+    std::cout << response.text;
 }

@@ -1,0 +1,21 @@
+# ninja log v5
+0	194	6679196904670171	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir	e605e63c2bd16227
+0	194	6679196904670171	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir	e605e63c2bd16227
+194	2981	6679196932547068	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download	2fdabd01de07a114
+194	2981	6679196932547068	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download	2fdabd01de07a114
+2981	3144	0	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update	676f24f2e30cf7aa
+2981	3144	0	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update	676f24f2e30cf7aa
+3144	3181	6679196934551700	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch	ae81c1017aacec9f
+3144	3181	6679196934551700	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch	ae81c1017aacec9f
+3181	3216	6679196934910989	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure	b36c2b0095357146
+3181	3216	6679196934910989	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure	b36c2b0095357146
+3216	3252	6679196935259809	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build	add5e55ed646eaa9
+3216	3252	6679196935259809	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build	add5e55ed646eaa9
+3252	3287	6679196935609122	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install	c9a7a63cc9fa14f
+3252	3287	6679196935609122	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install	c9a7a63cc9fa14f
+3287	3321	6679196935957945	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test	f8ae3949632232c5
+3287	3321	6679196935957945	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test	f8ae3949632232c5
+3321	3373	6679196936476805	CMakeFiles/cpr-populate-complete	2b08be51037f35c6
+3321	3373	6679196936476805	cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done	2b08be51037f35c6
+3321	3373	6679196936476805	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete	2b08be51037f35c6
+3321	3373	6679196936476805	A:/Programming/Projects--c---/Course/Module 30/Task 3/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done	2b08be51037f35c6
