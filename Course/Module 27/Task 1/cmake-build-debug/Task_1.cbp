@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Task_1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Task_1">
+				<Option output="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Task_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Task_1"/>
+					<CompileFile command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Task_1/fast">
+				<Option output="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Task_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Task_1/fast"/>
+					<CompileFile command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="A:/Programs/CLion/CLion 2021.3/bin/mingw/bin/mingw32-make.exe -f &quot;A:/Programming/Projects--c---/Course/Module 27/Task 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="A:/Programming/Projects--c---/Course/Module 27/Task 1/main.cpp">
+			<Option target="Task_1"/>
+		</Unit>
+		<Unit filename="A:/Programming/Projects--c---/Course/Module 27/Task 1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
