@@ -1,0 +1,33 @@
+"A:\Programs\CLion\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=A:/Programs/CLion/CLion 2021.3/bin/ninja/win/ninja.exe" -G Ninja "A:\Programming\Projects--c---\Course\Module 30\Task 2"
+-- C++ Requests CMake Options
+-- =======================================================
+--   USE_SYSTEM_CURL: OFF
+--   BUILD_CPR_TESTS: OFF
+--   GENERATE_COVERAGE: OFF
+--   CPR_CURL_NOSIGNAL: OFF
+--   USE_SYSTEM_GTEST: OFF
+--   CMAKE_USE_OPENSSL: OFF
+-- =======================================================
+-- Not using system Curl, using built-in curl project instead.
+CMake Warning at cmake-build-debug/_deps/curl-src/CMakeLists.txt:51 (message):
+  the curl cmake build system is poorly maintained.  Be aware
+
+
+-- curl version=[7.69.1-DEV]
+CMake Warning at cmake-build-debug/_deps/curl-src/CMake/Macros.cmake:86 (message):
+  Found no *nroff program
+Call Stack (most recent call first):
+  cmake-build-debug/_deps/curl-src/CMakeLists.txt:215 (curl_nroff_check)
+
+
+-- Could NOT find Perl (missing: PERL_EXECUTABLE) 
+-- Perl not found, testing disabled.
+-- Could NOT find LibSSH2 (missing: LIBSSH2_LIBRARY LIBSSH2_INCLUDE_DIR) 
+-- Enabled features: IPv6 AsynchDNS NTLM
+-- Enabled protocols: HTTP
+-- Enabled SSL backends: 
+-- Using CURL_INCLUDE_DIRS: .
+-- Using CURL_LIBRARIES: .
+-- Configuring done
+-- Generating done
+-- Build files have been written to: A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug

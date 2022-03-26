@@ -1,0 +1,3 @@
+A:/Programming/Projects--c---/Some Projects/Rectangles/cmake-build-debug/CMakeFiles/Rectangles.dir
+A:/Programming/Projects--c---/Some Projects/Rectangles/cmake-build-debug/CMakeFiles/edit_cache.dir
+A:/Programming/Projects--c---/Some Projects/Rectangles/cmake-build-debug/CMakeFiles/rebuild_cache.dir

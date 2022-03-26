@@ -1,0 +1,37 @@
+# ninja log v5
+0	131	6661866885828633	curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	b16723e724077df
+0	131	6661866885828633	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	b16723e724077df
+10070	10244	0	curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	b24ee4ad0e2aa9e9
+10070	10244	0	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	b24ee4ad0e2aa9e9
+10246	10287	6661866987368405	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	de5aa02c4d0982ef
+10359	10395	6661866988472199	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	34161bd21bf42784
+131	10070	6661866985214909	curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	43c1355322b5dd4a
+10246	10287	6661866987368405	curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	de5aa02c4d0982ef
+10395	10430	6661866988830990	curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	77bb73c842bba6ad
+131	10070	6661866985214909	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	43c1355322b5dd4a
+10287	10324	6661866987757588	curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	90e68498dc7c9fc0
+10287	10324	6661866987757588	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	90e68498dc7c9fc0
+10324	10359	6661866988122884	curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	5e33285c9e9ccaf5
+10324	10359	6661866988122884	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	5e33285c9e9ccaf5
+10359	10395	6661866988472199	curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	34161bd21bf42784
+10395	10430	6661866988830990	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	77bb73c842bba6ad
+10430	10479	6661866989315561	CMakeFiles/curl-populate-complete	3d4283e7f8eae98
+10430	10479	6661866989315561	curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	3d4283e7f8eae98
+10430	10479	6661866989315561	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete	3d4283e7f8eae98
+10430	10479	6661866989315561	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	3d4283e7f8eae98
+0	175	0	curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	b24ee4ad0e2aa9e9
+0	175	0	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	b24ee4ad0e2aa9e9
+175	215	6668735465968230	curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	de5aa02c4d0982ef
+175	215	6668735465968230	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	de5aa02c4d0982ef
+215	254	6668735466357189	curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	90e68498dc7c9fc0
+215	254	6668735466357189	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	90e68498dc7c9fc0
+254	293	6668735466756124	curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	5e33285c9e9ccaf5
+254	293	6668735466756124	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	5e33285c9e9ccaf5
+293	332	6668735467145100	curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	34161bd21bf42784
+293	332	6668735467145100	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	34161bd21bf42784
+332	373	6668735467544014	curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	77bb73c842bba6ad
+332	373	6668735467544014	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	77bb73c842bba6ad
+374	428	6668735468102520	CMakeFiles/curl-populate-complete	3d4283e7f8eae98
+374	428	6668735468102520	curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	3d4283e7f8eae98
+374	428	6668735468102520	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete	3d4283e7f8eae98
+374	428	6668735468102520	A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	3d4283e7f8eae98

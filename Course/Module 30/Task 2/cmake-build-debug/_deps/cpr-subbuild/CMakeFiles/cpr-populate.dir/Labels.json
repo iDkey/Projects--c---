@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles/cpr-populate"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles/cpr-populate.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test.rule"
+		},
+		{
+			"file" : "A:/Programming/Projects--c---/Course/Module 30/Task 2/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpr-populate"
+		],
+		"name" : "cpr-populate"
+	}
+}

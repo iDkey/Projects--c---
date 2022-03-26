@@ -1,0 +1,3 @@
+A:/Programming/Projects--c---/Some Projects/TestCode/cmake-build-debug/CMakeFiles/TestCode.dir
+A:/Programming/Projects--c---/Some Projects/TestCode/cmake-build-debug/CMakeFiles/edit_cache.dir
+A:/Programming/Projects--c---/Some Projects/TestCode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
