@@ -1,0 +1,3 @@
+A:/Programming/Projects--c---/Course/Module 31/Task 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+A:/Programming/Projects--c---/Course/Module 31/Task 1/cmake-build-debug/CMakeFiles/Task_1.dir
+A:/Programming/Projects--c---/Course/Module 31/Task 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
