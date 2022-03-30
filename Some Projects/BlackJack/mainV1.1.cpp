@@ -1,5 +1,8 @@
+//Version 1.1
+
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 #include <random>
 #include <ctime>
@@ -26,9 +29,8 @@ int convertCartsToValue(int indexCart, int& cartsValue)
 
 	if(indexCart == 12)
 		return cartsValue > 10 ? 1 : 11;
-};
-
-
+	return 0;
+}
 
 class Carts
 {
@@ -48,8 +50,8 @@ public:
 		additionalCarts.push_back(inIndexAdditional);
 	}
 
-	int getIndex1()	{ return indexCart1;}
-	int getIndex2()	{ return indexCart2;}
+	int getIndex1() const	{ return indexCart1;}
+	int getIndex2() const	{ return indexCart2;}
 	int getAdditionalIndex(int& i)
 	{
 		return additionalCarts[i];
@@ -67,14 +69,14 @@ private:
 	int cartsValue = 0;
 
 public:
+	Player()= default;;
+	Player(std::string inName) : playerName(std::move(inName)){};
+
 	void setCarts()
 	{
 		auto cartsPlug = new Carts;
 		cartsPlug->setIndexCarts(getRandomNum(0,12), getRandomNum(0,12));
 		availableCarts.push_back(cartsPlug);
-
-		//availableCarts.indexCart1 = getRandomNum(0,12);
-		//availableCarts.indexCart2 = getRandomNum(0,12);
 	}
 	void setCartsValue()
 	{
@@ -92,7 +94,7 @@ public:
 				cartsValue -= 10;
 		}
 	}
-	int getCartsValue()
+	int getCartsValue() const
 	{
 		return cartsValue;
 	}
@@ -105,10 +107,10 @@ public:
 		std::string availableCartsStr;
 		auto cartsPlug = availableCarts[0];
 		availableCartsStr = carts[cartsPlug->getIndex1()];
-		availableCartsStr += " " + carts[cartsPlug->getIndex2()];
+		availableCartsStr += ", " + carts[cartsPlug->getIndex2()];
 		for(int i = 0; i < cartsPlug->getAdditionalSize(); ++i)
 		{
-			availableCartsStr += " " + carts[cartsPlug->getAdditionalIndex(i)];
+			availableCartsStr += ", " + carts[cartsPlug->getAdditionalIndex(i)];
 		}
 		return availableCartsStr;
 	}
@@ -122,7 +124,7 @@ public:
 		return playerName;
 	}
 
-	bool getKeepPlaying()
+	bool getKeepPlaying() const
 	{
 		return keepPlaying;
 	}
@@ -143,6 +145,8 @@ private:
 	std::string dealerName = "";
 	Carts availableCarts;
 	int cartsValue = 0;
+	std::vector<Player*> players;
+	int countOfSplit = 0;
 
 public:
 	void setCarts()
@@ -153,8 +157,17 @@ public:
 	{
 		cartsValue += convertCartsToValue(availableCarts.getIndex1(), cartsValue);
 		cartsValue += convertCartsToValue(availableCarts.getIndex2(), cartsValue);
+		for(int i = 0; i < availableCarts.getAdditionalSize(); ++i)
+		{
+			cartsValue += convertCartsToValue(availableCarts.getAdditionalIndex(i), cartsValue);
+		}
+		if(cartsValue > 21)
+		{
+			if(availableCarts.getIndex1() == 12 or availableCarts.getIndex2() == 12)
+				cartsValue -= 10;
+		}
 	}
-	int getCartsValue()
+	int getCartsValue() const
 	{
 		return cartsValue;
 	}
@@ -172,7 +185,16 @@ public:
 		return dealerName;
 	}
 
-	void playerMore(Player* player)
+	void dealerMore()
+	{
+		int newIndex = getRandomNum(0,12);
+		std::string newCartName = carts[newIndex];
+		availableCarts.setAdditionalCart(newIndex);
+		cartsValue = 0;
+		setCartsValue();
+	}
+
+	static void playerMore(Player* player)
 	{
 		int newIndex = getRandomNum(0,12);
 		std::string newCartName = carts[newIndex];
@@ -181,7 +203,7 @@ public:
 		player->setCartsValue();
 	}
 
-	void playerDouble(Player* player)
+	static void playerDouble(Player* player)
 	{
 		playerMore(player);
 		player->setKeepPlaying();
@@ -189,37 +211,203 @@ public:
 
 	void playerSplit(Player* player)
 	{
-
+		if(player->getCarts()->getIndex1() == player->getCarts()->getIndex2() and
+				player->getCarts()->getAdditionalSize() == 0)
+		{
+			countOfSplit++;
+			auto* carts2 = new Carts();
+			int plug = player->getCarts()->getIndex2();
+			player->getCarts()->setIndexCarts(player->getCarts()->getIndex1(), getRandomNum(0, 12));
+			carts2->setIndexCarts(plug, getRandomNum(0, 12));
+		}
+		else
+			std::cout << "Cannot split" << std::endl;
 	}
 
-	void playerEnough(Player* player)
+	static void playerEnough(Player* player)
 	{
 		player->setKeepPlaying();
 	}
+
+	void pushPlayerPointer(Player*& player)
+	{
+		players.push_back(player);
+	}
+	Player* getPlayerPointer(int playerIndex)
+	{
+		return players[playerIndex];
+	}
+	int getPlayerCount()
+	{
+		return players.size();
+	}
 };
 
-int main() {
-	/*auto* dealer = new Dealer();
+//function of logic game
+std::string botsLogic(Dealer*& dealer, const std::string& whoPlay, const int& playerIndex)
+{
+	if(whoPlay == "player")
+	{
+		if(dealer->getPlayerPointer(playerIndex)->getCarts()->getIndex1() ==
+		   dealer->getPlayerPointer(playerIndex)->getCarts()->getIndex2() and
+		   dealer->getPlayerPointer(playerIndex)->getCartsValue() < 18)
+		{
+			return "split";
+		}
+		else
+		if(dealer->getPlayerPointer(playerIndex)->getCartsValue() > 17)
+		{
+			return "enough";
+		}
+		else
+		if(getRandomNum(1, 2) == 1 and dealer->getPlayerPointer(playerIndex)->getCartsValue() < 17)
+		{
+			return "double";
+		}
+		else
+			return "more";
+	}
+	else
+	{
+		if(dealer->getCartsValue() <= 17)
+			return "more";
+		else
+			return "enough";
+	}
+}
+
+//bots play game
+void botsPlaying(Dealer*& dealer, Player*& player)
+{
+	for(int i = 1; i < dealer->getPlayerCount(); ++i)
+	{
+		while(player->getKeepPlaying())
+		if(botsLogic(dealer, "player", i) == "more")
+		{
+			Dealer::playerMore(player);
+		}
+		else
+			if(botsLogic(dealer, "player", i) == "split")
+			{
+				dealer->playerSplit(player);
+			}
+			else
+				if(botsLogic(dealer, "player", i) == "double")
+					Dealer::playerDouble(player);
+				else
+					if(botsLogic(dealer, "player", i) == "enough")
+						Dealer::playerEnough(player);
+	}
+
+	while(botsLogic(dealer, "dealer", -1) != "enough")
+	{
+		if(botsLogic(dealer, "dealer", -1) == "more")
+			dealer->dealerMore();
+	}
+}
+
+void startGame(int& countOfPlayers, std::string& inName)
+{
+	//settings for dealer
+	auto* dealer = new Dealer();
 	dealer->setDealerName();
 	dealer->setCarts();
 	dealer->setCartsValue();
 	dealer->getCartsValue();
 	std::cout << "Dealer " << dealer->getDealerName() << std::endl;
 	std::cout << "Dealer's cart: " << dealer->getAvailableCart() << std::endl;
-	std::cout << "Dealer's cart value:" << dealer->getCartsValue();*/
+	std::cout << "Dealer's carts value:" << dealer->getCartsValue() << std::endl;
+	std::cout << std::endl;
 
-	auto* player = new Player();
-	player->setPlayerName();
+	//settings for player
+	auto* player = new Player(inName);
 	player->setCarts();
 	player->setCartsValue();
-	player->getCartsValue();
-	std::cout << "Player " << player->getPlayerName() << std::endl;
-	std::cout << "Player's cart: " << player->getAvailableCart() << std::endl;
-	std::cout << "Player's cart value:" << player->getCartsValue() << std::endl;
-	auto* dealer = new Dealer();
-	dealer->playerMore(player);
-	std::cout << "Player's cart: " << player->getAvailableCart() << std::endl;
-	std::cout << "Player's cart value:" << player->getCartsValue() << std::endl;
+	dealer->pushPlayerPointer(player);
 
+	//settings for bots
+	for(int i = 0; i < countOfPlayers - 1; ++i)
+	{
+		auto* playerBot = new Player();
+		playerBot->setPlayerName();
+		playerBot->setCarts();
+		playerBot->setCartsValue();
+		dealer->pushPlayerPointer(playerBot);
+	}
 
+	//output for all players
+	for(int i = 0; i < countOfPlayers; ++i)
+	{
+		std::cout << "Player#" << i + 1 << std::endl;
+		std::cout << "Player name: " << dealer->getPlayerPointer(i)->getPlayerName() << std::endl;
+		std::cout << dealer->getPlayerPointer(i)->getPlayerName() << " have " << dealer->getPlayerPointer(i)->getAvailableCart() << std::endl;
+		std::cout << "its " << dealer->getPlayerPointer(i)->getCartsValue() << std::endl;
+		std::cout << std::endl;
+	}
+
+	//playing game for all players
+	for ( int i = 0; i < countOfPlayers; i++ ) {
+		std::cout << "Player#" << i + 1 << " move" << std::endl;
+		player = dealer->getPlayerPointer(i);
+		while(player->getKeepPlaying())
+		{
+			if(i == 0)
+			{
+				std::string move = "";
+				std::cout << "Make a move:" << std::endl;
+				std::cin >> move;
+				if(move == "more")
+				{
+					dealer->playerMore(player);
+					if(player->getCartsValue() > 21)
+					{
+						std::cout << "Player " << inName << " lose" << std::endl;
+						player->setKeepPlaying();
+					}
+				}
+				else
+				if(move == "double")
+				{
+					dealer->playerDouble(player);
+				}
+				else
+				if(move == "enough")
+				{
+					dealer->playerEnough(player);
+				}
+				else
+				if(move == "split")
+				{
+					dealer->playerSplit(player);
+				};
+				std::cout << dealer->getPlayerPointer(i)->getPlayerName() << " have ";
+				std::cout << dealer->getPlayerPointer(i)->getAvailableCart() << std::endl;
+				std::cout << "Its " << dealer->getPlayerPointer(i)->getCartsValue();
+				std::cout << std::endl;
+			}
+			else
+			{
+				botsPlaying(dealer, player);
+				std::cout << dealer->getPlayerPointer(i)->getPlayerName() << " have ";
+				std::cout << dealer->getPlayerPointer(i)->getAvailableCart() << std::endl;
+				std::cout << "Its " << dealer->getPlayerPointer(i)->getCartsValue();
+				std::cout << std::endl;
+			}
+		}
+	}
+}
+
+int main() {
+	//setting count of players on the table
+	int countOfPlayers = 0;
+	std::cout << "Input count of players:" << std::endl;
+	std::cin >> countOfPlayers;
+
+	//setting player's name
+	std::string name = "";
+	std::cout << "Input u name:" << std::endl;
+	std::cin >> name;
+
+	//start 1st settings
+	startGame(countOfPlayers, name);
 }
