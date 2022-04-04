@@ -49,8 +49,8 @@ cmake_ninja_workdir = A$:/Programming/Projects--c---/Some$ Projects/BlackJack/cm
 
 build cmake_object_order_depends_target_BlackJack: phony || CMakeFiles/BlackJack.dir
 
-build CMakeFiles/BlackJack.dir/mainV1.1.cpp.obj: CXX_COMPILER__BlackJack_Debug A$:/Programming/Projects--c---/Some$ Projects/BlackJack/mainV1.1.cpp || cmake_object_order_depends_target_BlackJack
-  DEP_FILE = CMakeFiles\BlackJack.dir\mainV1.1.cpp.obj.d
+build CMakeFiles/BlackJack.dir/mainV1.2.cpp.obj: CXX_COMPILER__BlackJack_Debug A$:/Programming/Projects--c---/Some$ Projects/BlackJack/mainV1.2.cpp || cmake_object_order_depends_target_BlackJack
+  DEP_FILE = CMakeFiles\BlackJack.dir\mainV1.2.cpp.obj.d
   FLAGS = -g -std=gnu++17
   OBJECT_DIR = CMakeFiles\BlackJack.dir
   OBJECT_FILE_DIR = CMakeFiles\BlackJack.dir
@@ -63,7 +63,7 @@ build CMakeFiles/BlackJack.dir/mainV1.1.cpp.obj: CXX_COMPILER__BlackJack_Debug A
 #############################################
 # Link the executable BlackJack.exe
 
-build BlackJack.exe: CXX_EXECUTABLE_LINKER__BlackJack_Debug CMakeFiles/BlackJack.dir/mainV1.1.cpp.obj
+build BlackJack.exe: CXX_EXECUTABLE_LINKER__BlackJack_Debug CMakeFiles/BlackJack.dir/mainV1.2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BlackJack.dir

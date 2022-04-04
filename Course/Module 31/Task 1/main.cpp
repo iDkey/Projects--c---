@@ -2,6 +2,11 @@
 #include <string>
 #include <memory>
 
+struct ControlBlock
+{
+	int countLinks = 0;
+};
+
 class Toy
 {
 public:
@@ -16,7 +21,7 @@ class shared_ptr_toy
 {
 private:
 	Toy* obj;
-	int *count = new int(0);
+	ControlBlock* block = new ControlBlock();
 
 public:
 	shared_ptr_toy()
@@ -33,36 +38,46 @@ public:
 	shared_ptr_toy(const shared_ptr_toy& oth)
 	{
 		std::cout << "copy obj" << std::endl;
-		*count+=1;
+		this->block = oth.block;
+		block->countLinks++;
 		obj = new Toy(*oth.obj);
+
 	}
 	shared_ptr_toy& operator = (const shared_ptr_toy& oth)
 	{
 		std::cout << "copy = obj" << std::endl;
-		*count += 1;
+
 		if(this == &oth)
 			return *this;
 		if(obj != nullptr)
 			delete obj;
 		obj = new Toy(*oth.obj);
+		this->block = oth.block;
+		block->countLinks++;
 		return *this;
 	}
 
 	~shared_ptr_toy()
 	{
-		if(*count == 0)
+
+		if(obj == nullptr)
 		{
-			delete count;
-			std::cout << "Del count" << std::endl;
+			delete obj;
 		}
 		else
 		{
-			*count -= 1;
-			delete obj;
-			std::cout << "del obj" << std::endl;
+			if(block->countLinks == 0)
+			{
+				delete block;
+				std::cout << "Del count" << std::endl;
+				delete obj;
+				std::cout << "del obj" << std::endl;
+			}
+			else
+			{
+				block->countLinks--;
+			}
 		}
-
-
 	}
 };
 
@@ -89,14 +104,18 @@ public:
 
 };
 
-void make_shared(shared_ptr_toy& toy)
+shared_ptr_toy make_shared(std::string toyName)
 {
-	std::unique_ptr<Dog> d1 = std::make_unique<Dog>("sharik", toy, 5);
+	shared_ptr_toy d1 = shared_ptr_toy(toyName);
+	return d1;
 }
 
 int main() {
-	shared_ptr_toy ball("ball");
-	make_shared(ball);
-	std::unique_ptr<Dog> d1 = std::make_unique<Dog>("sharik", ball, 5);
-	std::unique_ptr<Dog> d2 = std::make_unique<Dog>("bobik", ball, 5);
+	shared_ptr_toy toy1 = make_shared("ball");
+
+	auto d1 = new Dog("bobik", toy1, 5);
+	auto d2 = new Dog("bobik", toy1, 5);
+
+	delete d1;
+	delete d2;
 }
