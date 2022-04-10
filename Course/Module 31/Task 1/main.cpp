@@ -40,7 +40,7 @@ public:
 		std::cout << "copy obj" << std::endl;
 		this->block = oth.block;
 		block->countLinks++;
-		obj = new Toy(*oth.obj);
+		obj = oth.obj;
 
 	}
 	shared_ptr_toy& operator = (const shared_ptr_toy& oth)
@@ -51,7 +51,7 @@ public:
 			return *this;
 		if(obj != nullptr)
 			delete obj;
-		obj = new Toy(*oth.obj);
+		obj = oth.obj;
 		this->block = oth.block;
 		block->countLinks++;
 		return *this;
@@ -59,24 +59,16 @@ public:
 
 	~shared_ptr_toy()
 	{
-
-		if(obj == nullptr)
+		if(block->countLinks == 0)
 		{
+			delete block;
+			std::cout << "Del count" << std::endl;
 			delete obj;
+			std::cout << "del obj" << std::endl;
 		}
 		else
 		{
-			if(block->countLinks == 0)
-			{
-				delete block;
-				std::cout << "Del count" << std::endl;
-				delete obj;
-				std::cout << "del obj" << std::endl;
-			}
-			else
-			{
-				block->countLinks--;
-			}
+			block->countLinks--;
 		}
 	}
 };

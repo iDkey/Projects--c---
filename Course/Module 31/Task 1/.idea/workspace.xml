@@ -12,24 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc97f966-9e06-46d5-b8a8-4f79eaf510bb" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/mainV1.2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module 29/Task 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 29/Task 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module 29/Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 29/Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task_1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task_1.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Task_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Task_1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 2/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/BlackJack.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/BlackJack.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/CMakeFiles/BlackJack.dir/mainV1.2.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/CMakeFiles/BlackJack.dir/mainV1.2.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +55,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Some Projects/BlackJack" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Module 29/Task 1" />
   </component>
   <component name="RunManager">
     <configuration name="Task_1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Task_1" TARGET_NAME="Task_1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Task_1" RUN_TARGET_NAME="Task_1">
@@ -88,7 +75,8 @@
       <workItem from="1648650586979" duration="60000" />
       <workItem from="1648650773711" duration="1523000" />
       <workItem from="1648737754796" duration="27000" />
-      <workItem from="1649086128636" duration="3560000" />
+      <workItem from="1649086128636" duration="4252000" />
+      <workItem from="1649602227774" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1648651698121</created>
@@ -97,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648651698121</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1649089725364</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649089725364</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
