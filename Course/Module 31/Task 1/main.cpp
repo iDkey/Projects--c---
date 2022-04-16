@@ -1,113 +1,95 @@
 #include <iostream>
 #include <string>
-#include <memory>
-
-struct ControlBlock
-{
-	int countLinks = 0;
-};
 
 class Toy
 {
-public:
-	Toy() : name("SameToy") {};
-	Toy(std::string inName) : name(inName) {};
-
 private:
-	std::string name;
+	std::string _name;
+
+public:
+	Toy() : _name("SameToy") {};
+	Toy(std::string inName) : _name(std::move(inName)) {};
+	std::string name() const
+	{
+		return _name;
+	}
 };
 
 class shared_ptr_toy
 {
 private:
-	Toy* obj;
-	ControlBlock* block = new ControlBlock();
+	Toy* obj = nullptr;
+	int* countLinks = nullptr;
+	void decrease()
+	{
+		if(--*countLinks == 0)
+		{
+			std::cout << "Delete toy with name " << (obj == nullptr ? "Empty" : obj->name()) << std::endl;
+			delete obj;
+			delete countLinks;
+		}
+	}
 
 public:
 	shared_ptr_toy()
 	{
-		std::cout << "create obj" << std::endl;
 		obj = new Toy("SomeName");
+		countLinks = new int(1);
 	}
 	shared_ptr_toy(std::string inName)
 	{
-		std::cout << "create obj" << std::endl;
 		obj = new Toy(inName);
+		countLinks = new int(1);
+	}
+	shared_ptr_toy(Toy* ptr): obj(ptr)
+	{
+		countLinks = new int(1);
 	}
 
 	shared_ptr_toy(const shared_ptr_toy& oth)
 	{
-		std::cout << "copy obj" << std::endl;
-		this->block = oth.block;
-		block->countLinks++;
 		obj = oth.obj;
-
+		countLinks = oth.countLinks;
+		++*countLinks;
 	}
+
 	shared_ptr_toy& operator = (const shared_ptr_toy& oth)
 	{
-		std::cout << "copy = obj" << std::endl;
-
-		if(this == &oth)
-			return *this;
-		if(obj != nullptr)
-			delete obj;
-		obj = oth.obj;
-		this->block = oth.block;
-		block->countLinks++;
+		if(countLinks != oth.countLinks)
+		{
+			decrease();
+			obj = oth.obj;
+			countLinks = oth.countLinks;
+			++*countLinks;
+		}
 		return *this;
+	}
+	Toy* operator->() const
+	{
+		return obj;
 	}
 
 	~shared_ptr_toy()
 	{
-		if(block->countLinks == 0)
-		{
-			delete block;
-			std::cout << "Del count" << std::endl;
-			delete obj;
-			std::cout << "del obj" << std::endl;
-		}
-		else
-		{
-			block->countLinks--;
-		}
+		decrease();
 	}
 };
 
-class Dog
+template<typename ... Args>
+shared_ptr_toy make_shared_toy(Args&& ... args)
 {
-private:
-	std::string name = "";
-	int age = 0;
-	shared_ptr_toy lovelyToy;
-public:
-	Dog(std::string inNameDog, shared_ptr_toy& inNameToy, int inAge) : name(inNameDog), lovelyToy(inNameToy)
-	{
-		if(inAge > 0 and inAge < 30)
-			age = inAge;
-	}
-	Dog() : Dog("SomeName", lovelyToy, 0) {};
-	Dog(std::string inName) : Dog(inName, lovelyToy, 0) {};
-	Dog(int inAge) : Dog("SomeName", lovelyToy, inAge) {};
-
-	void copyToy(const Dog& oth)
-	{
-		lovelyToy = oth.lovelyToy;
-	}
-
-};
-
-shared_ptr_toy make_shared(std::string toyName)
-{
-	shared_ptr_toy d1 = shared_ptr_toy(toyName);
-	return d1;
+	return shared_ptr_toy(std::forward<Args>(args)...);
 }
 
 int main() {
-	shared_ptr_toy toy1 = make_shared("ball");
+	shared_ptr_toy null1(nullptr);
+	shared_ptr_toy null5(nullptr);
+	auto null2 = null1;
 
-	auto d1 = new Dog("bobik", toy1, 5);
-	auto d2 = new Dog("bobik", toy1, 5);
+	auto p = make_shared_toy("Ball");
+	auto p1 = make_shared_toy("Bone");
+	null2 = null1 = p;
+	null5 = p1;
 
-	delete d1;
-	delete d2;
+	std::cout<<null2->name()<<std::endl;
 }
