@@ -13,20 +13,22 @@ public:
 	virtual int VerticesCount(){}; // Метод должен считать текущее количество вершин
 	virtual void GetNextVertices(int vertex, std::vector<int> &vertices){}; // Для конкретной вершины метод выводит в вектор “вершины” все вершины, в которые можно дойти по ребру из данной
 	virtual void GetPrevVertices(int vertex, std::vector<int> &vertices){}; // Для конкретной вершины метод выводит в вектор “вершины” все вершины, из которых можно дойти по ребру в данную
-	void ShowGraph(){};
+	virtual void ShowGraph(IGraph* iGraph){};
 };
 
 class MatrixGraph: public IGraph
 {
 private:
 	std::map<int, std::vector<int>> neighboringVertices;
+	int countV = 0;
+
 public:
 	virtual void AddEdge(int from, int to);
 	virtual int VerticesCount();
 	virtual void GetNextVertices(int vertex, std::vector<int> &vertices);
 	virtual void GetPrevVertices(int vertex, std::vector<int> &vertices);
 
-	virtual void ShowGraph();
+	virtual void ShowGraph(IGraph* iGraph);
 
 	MatrixGraph();
 	MatrixGraph(IGraph *_oth);
@@ -97,15 +99,16 @@ public:
 		}
 	}
 
-	void ShowGraph()
+	virtual void ShowGraph(IGraph* listGraph)
 	{
-		for(auto &it : neighboringVertices)
+		for(auto it : neighboringVertices)
 		{
-			std::cout << it.first;
-			for(auto &verex : it.second)
-				std::cout << "->" << verex;
-
-			std::cout<<std::endl;
+			std::cout << it.first << ": ";
+			for(auto vert : it.second)
+			{
+				std::cout << vert << " ";
+			}
+			std::cout << std::endl;
 		}
 	}
 
@@ -115,21 +118,22 @@ public:
 		MatrixGraph* matrix = dynamic_cast<MatrixGraph*>(oth);
 		if (matrix)
 		{
-			std::cout << "Convert matrix to list" << std::endl;
+			std::cout << "Convert matrix to list";
 			int vertex_count = matrix->VerticesCount();
-
-			for (int i = 0; i < vertex_count + 1; ++i)
+			for (int i = 0; i < vertex_count; ++i)
 			{
 				std::vector<int> vec;
 				matrix->GetNextVertices(i, vec);
-				if (!vec.empty())
+				if(!vec.empty())
 				{
-					for (auto &n : vec)
-						this->AddEdge(i, n);
+					for(int k = 0; k < vec.size(); k++)
+					{
+						if(vec[k] == 1)
+							this->AddEdge(i, k);
+					}
 				}
 				else
 				{
-					std::vector<int> vec;
 					matrix->GetPrevVertices(i, vec);
 					if (!vec.empty())
 					{
@@ -145,22 +149,92 @@ public:
 	}
 };
 
-void MatrixGraph::AddEdge(int from, int to) {
-if(from < 0 || to < 0)
+void MatrixGraph::AddEdge(int from, int to)
+{
+	if(from < 0 || to < 0)
 	{
 		std::cout << "Number of vertices cannot be negative" << std::endl;
 		return;
 	}
-	std::vector<int> vertices_to{to};
-	auto it = neighboringVertices.insert(std::make_pair(from, vertices_to));
-	if(!it.second)
+
+	if(from < to)
 	{
-		it.first->second.push_back(to);
+		if(to + 1 > countV)
+		{
+			//create vector for cop
+			std::vector<int> vert;
+			vert.reserve(to);
+			//for every vertex's resize vector to 'to''s size
+			for(int i = 0; i < to + 1; ++i)
+			{
+				//fill zero
+				vert.clear();
+				for(int k = 0; k < to + 1; ++k)
+					vert.push_back(0);
+
+				if(i + 1 > countV)
+				{
+					neighboringVertices.insert(std::make_pair(i, vert));
+				}
+				else
+				{
+					//fill old data
+					auto it = neighboringVertices.find(i);
+					for(int a : it->second)
+						vert[a] = it->second[a];
+					it->second = vert;
+				}
+
+
+			}
+			//add new way
+			neighboringVertices[from][to] = 1;
+			//update count of vertices
+			countV = VerticesCount();
+		}
+		else
+		{
+			neighboringVertices[from][to] = 1;
+		}
 	}
-	auto firstIt = neighboringVertices.find(to);
-	if(firstIt == neighboringVertices.end())
+	else
 	{
-		neighboringVertices[to] = std::vector<int>();
+		if(from + 1 > countV)
+		{
+			std::vector<int> vert;
+			vert.reserve(from);
+			//for every vertex's resize vector to 'to''s size
+			for(int i = 0; i < from + 1; ++i)
+			{
+				//fill zero
+				vert.clear();
+				for(int k = 0; k < from + 1; ++k)
+					vert.push_back(0);
+
+				if(i + 1 > countV)
+				{
+					neighboringVertices.insert(std::make_pair(i, vert));
+				}
+				else
+				{
+					//fill old data
+					auto it = neighboringVertices.find(i);
+					for(int a : it->second)
+						vert[a] = it->second[a];
+					it->second = vert;
+				}
+
+
+			}
+			//add new way
+			neighboringVertices[from][to] = 1;
+			//update count of vertices
+			countV = VerticesCount();
+		}
+		else
+		{
+			neighboringVertices[from][to] = 1;
+		}
 	}
 }
 
@@ -211,6 +285,7 @@ MatrixGraph::MatrixGraph(){};
 
 MatrixGraph::MatrixGraph(IGraph* oth)
 {
+	std::cout << "Converting list graph to matrix graph";
 	ListGraph* list = dynamic_cast<ListGraph*>(oth);
 	if(list)
 	{
@@ -237,25 +312,36 @@ MatrixGraph::MatrixGraph(IGraph* oth)
 	}
 }
 
-void MatrixGraph::ShowGraph()
-{   std::cout<<"  ";
-	for(int head = 0; head < VerticesCount(); ++head)
-		std::cout<<head;
+void MatrixGraph::ShowGraph(IGraph* matrixGraph)
+{
+	std::cout << "  ";
+	for(int i = 0; i < VerticesCount(); i++)
+		std::cout << i << " ";
 	std::cout << std::endl;
-
-	for(int i = 0; i < VerticesCount(); ++i)
+	for(int i = 0; i < matrixGraph->VerticesCount(); ++i)
 	{
-		std::cout << i <<":";
-		for(int j = 0; j < VerticesCount(); ++j)
+		std::cout << i << " ";
+		auto it = neighboringVertices[i];
+		for(int i : it)
 		{
-			std::cout<<neighboringVertices[i][j];
-
+			std::cout << i << " ";
 		}
-		std::cout<<"\n";
+		std::cout << std::endl;
 	}
-	std::cout<<std::endl;
 }
 
 int main() {
+	IGraph* listGraph = new ListGraph();
 
+	listGraph->AddEdge(1, 0);
+	listGraph->AddEdge(0, 2);
+	listGraph->AddEdge(0, 1);
+	listGraph->AddEdge(2, 1);
+	listGraph->AddEdge(1, 2);
+	listGraph->AddEdge(2, 0);
+	listGraph->AddEdge(2, 2);
+	listGraph->ShowGraph(listGraph);
+	IGraph* matrixGraph = new MatrixGraph(listGraph);
+	std::cout << std::endl;
+	matrixGraph->ShowGraph(matrixGraph);
 }

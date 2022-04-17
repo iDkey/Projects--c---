@@ -12,12 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="818ce21a-46da-4141-9454-3aa4efc40a8f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Module 29/Task 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 29/Task 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module 29/Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module 29/Task 1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task 1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task_2.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task_2.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Task_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Task_2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Some Projects/BlackJack/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/Tests.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/CMakeFiles/Tests.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Tests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/cmake-build-debug/Tests.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tests/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tests/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +65,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Module 29/Task 1/main.cpp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Task_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Task_2" TARGET_NAME="Task_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Task_2" RUN_TARGET_NAME="Task_2">
@@ -77,6 +86,10 @@
       <workItem from="1649089847232" duration="563000" />
       <workItem from="1649160103519" duration="7301000" />
       <workItem from="1649175965119" duration="3754000" />
+      <workItem from="1649602454573" duration="7200000" />
+      <workItem from="1650102233818" duration="3860000" />
+      <workItem from="1650179214953" duration="3432000" />
+      <workItem from="1650182692458" duration="2841000" />
     </task>
     <servers />
   </component>
