@@ -1,0 +1,5 @@
+D:/Projects/Course/Module 32/Task 1/cmake-build-debug/CMakeFiles/Task_1.dir
+D:/Projects/Course/Module 32/Task 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/Course/Module 32/Task 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Projects/Course/Module 32/Task 1/cmake-build-debug/nlohmann_json/CMakeFiles/edit_cache.dir
+D:/Projects/Course/Module 32/Task 1/cmake-build-debug/nlohmann_json/CMakeFiles/rebuild_cache.dir
