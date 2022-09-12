@@ -1,0 +1,5 @@
+D:/Projects/Portfolio/LoginAndRegistrationSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/Portfolio/LoginAndRegistrationSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Projects/Portfolio/LoginAndRegistrationSystem/cmake-build-debug/src/CMakeFiles/LoginAndRegistrationSystem.dir
+D:/Projects/Portfolio/LoginAndRegistrationSystem/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+D:/Projects/Portfolio/LoginAndRegistrationSystem/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
